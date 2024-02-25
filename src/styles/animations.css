@@ -1,0 +1,19 @@
+.router-outlet.ng-enter, .router-outlet.ng-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.router-outlet.ng-enter {
+  transform: translateX(1000%);
+}
+
+.router-outlet.ng-leave {
+  transform: translateX(0%);
+}
+
+.router-outlet.ng-enter-active, .router-outlet.ng-leave-active {
+  transition: transform 0.5s ease-in-out;
+}
