@@ -1,16 +1,20 @@
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-4">Simple header</span>
-    </a>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a routerLink="/" class="nav-link active" aria-current="page">Inicio</a></li>
-      <li class="nav-item"><a routerLink="/about" class="nav-link">¿Quiénes somos?</a></li>
-      <li class="nav-item"><a routerLink="/services" class="nav-link">Nuestra oferta</a></li>
-      <li class="nav-item"><a routerLink="/impact" class="nav-link">Nuestro impacto</a></li>
-      <li class="nav-item"><a routerLink="/psm" class="nav-link">Podemos Ser en medios</a></li>
-    </ul>
-  </header>
-</div>
+<nav class="navbar navbar-expand-md ">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar w/ text</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+        <li class="nav-item"><a routerLink="/" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a routerLink="/about" class="nav-link">¿Quiénes somos?</a></li>
+        <li class="nav-item"><a routerLink="/services" class="nav-link">Nuestra oferta</a></li>
+        <li class="nav-item"><a routerLink="/impact" class="nav-link">Nuestro impacto</a></li>
+        <li class="nav-item"><a routerLink="/psm" class="nav-link">Podemos Ser en medios</a></li>
+      </ul>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div>
+  </div>
+</nav>

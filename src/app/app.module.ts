@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +15,8 @@ import { ServicesComponent } from './services/services.component';
 import { ImpactComponent } from './impact/impact.component';
 import { PsmComponent } from './psm/psm.component';
 
+
+const bootstrap = require('bootstrap')
 @NgModule({
   declarations: [
     AppComponent,
