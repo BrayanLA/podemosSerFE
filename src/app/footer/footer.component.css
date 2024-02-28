@@ -1,6 +1,9 @@
 footer {
-  background-color: #734897;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+  background-color: #562055;
+  color: white;
+}
+.half-bottom {
+  position: absolute;
+  top: 100%; /* Esto colocará la imagen sobre el footer, en la parte inferior */
+  z-index: 10;
 }
