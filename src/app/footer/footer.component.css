@@ -1,9 +1,12 @@
 footer {
+  position: relative;
   background-color: #562055;
   color: white;
 }
 .half-bottom {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
   position: absolute;
-  top: 100%; /* Esto colocará la imagen sobre el footer, en la parte inferior */
+  left: 22%;
+  transform: translate(-50%, -50%);
   z-index: 10;
 }

@@ -1,27 +1,39 @@
-/* styles.css */
 @import "../app.component.css";
 
 
 #img-text {
-  /* Establece la imagen de fondo y ajusta los estilos según sea necesario */
+  position: relative;
   background-image: url('../../assets/img/BG/09Septiembre_SocializaciónVillavicencio.jpg');
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen */
-  /* Otros estilos opcionales */
+  background-size: cover;
+  background-position: center;
   height: 376px;
-  /* padding: 20px; */
 }
-#text-img{
+
+#img-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(178deg, rgba(255,255,255,0) 42%, rgba(12,140,171,1) 100%);
+}
+
+#text-img {
   color: white;
   font-size: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 300px;
+  z-index: 1; /* Para asegurarse de que el texto esté encima del fondo azul */
 }
 
 #backgroud-img {
-  /* Establece la imagen de fondo y ajusta los estilos según sea necesario */
   background-image: url('../../assets/img/BG/KONRAD_30mujeres_texturas4.png');
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-  background-position: center; /* Centra la imagen */
-  /* Otros estilos opcionales */
-  /* color: white; */
-  /* padding: 20px; */
+  background-size: cover;
+  background-position: center;
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
