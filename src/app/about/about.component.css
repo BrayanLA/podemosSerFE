@@ -37,3 +37,37 @@ a{
   text-decoration: none;
   color: #000;
 }
+
+
+.img-autoras {
+  border-radius: 15px;
+  position: relative;
+  border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+#icon-email{
+  color: #562055;
+}
+#icon-link{
+  color: #f47649;
+}
+#icon-inst{
+  color: #0c8cab;
+}
+h2 {
+  position: relative;
+  color: #0c8cab;
+}
+h2::before {
+  content: '';
+  position: absolute;
+  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
+  bottom: 31%;
+  width: 80%;
+  height: 6px;
+  background-color: #f47649;
+  z-index: 10;
+}
+
+
