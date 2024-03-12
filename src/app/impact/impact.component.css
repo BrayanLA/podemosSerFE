@@ -290,7 +290,7 @@ h2 {
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content:before {
-  left: 10px
+  left: 2px
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-content {
@@ -365,7 +365,7 @@ h2 {
       top: 30%
   }
   .main-timeline .year {
-      font-size: 24px
+      font-size: 100px
   }
   .main-timeline .timeline-content,
   .main-timeline .timeline:nth-child(2n) .timeline-content {

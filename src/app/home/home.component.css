@@ -22,12 +22,14 @@
 }
 
 #text-img {
-  color: white;
+  color: #4f2352;;
   font-size: 90px;
   position: absolute;
   bottom: 0;
   right: 300px;
-  z-index: 1; /* Para asegurarse de que el texto esté encima del fondo azul */
+  z-index: 1; 
+  font-family: 'LEMONMILK-Bold', sans-serif; /* Para asegurarse de que el texto esté encima del fondo azul */
+
 }
 
 #backgroud-img {
@@ -37,18 +39,66 @@
 }
 
 @font-face {
-  font-family: 'LEMONMILK-Bold'; /* Nombre de la fuente */
-  src: url('/src/assets/fonts/lemon_milk&LEMONMILK-Bold.otf') format('opentype'); /* Ruta al archivo de fuente */
+  font-family: 'LEMONMILK-RegularItalic'; /* Nombre de la fuente */
+  src: url('/src/assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf') format('opentype'); /* Ruta al archivo de fuente */
   font-weight: bold; /* Peso de la fuente */
   font-style: normal; /* Estilo de la fuente */
 }
 
+.container {
+  text-align: center; /* Para centrar el contenido */
+}
+
+
+
 p {
-  font-family: 'LEMONMILK-Bold';
+  font-family: 'LEMONMILK-RegularItalic';
   color: black; /* Color de texto blanco */
+  text-align: justify;
 }
 
 .bold-purple {
   font-weight: bold; /* Texto en negrita */
-  color: purple; /* Color morado */
+  color:#4f2352; /* Color morado */
+}
+
+.container-fluid {
+  padding: 50px 0; /* Agrega espacio alrededor del contenido */
+}
+
+#carouselExampleSlidesOnly {
+  margin-top: 50px; /* Espacio superior entre el carrusel y el texto */
+}
+
+h1 {
+  margin-top: 50px; /* Espacio superior entre el título y el contenido */
+}
+
+iframe {
+  margin-top: 20px; /* Espacio superior entre los iframes */
+  display: block;
+  margin: 0 auto /* Centra los iframes */
+}
+
+/* Estilos específicos para el carrusel */
+.carousel-item img {
+  max-width: 100%; /* Asegura que las imágenes del carrusel sean responsivas */
+}
+
+
+
+h3.descarga {
+  font-family: 'LEMONMILK-RegularItalic', sans-serif; /* Utiliza la fuente LEMONMILK-Bold */
+  color: #4f2352; /* Color morado */
+  font-size: 40px; /* Tamaño grande */
+ /* text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  margin-top: 50px; /* Espacio superior */
+  text-shadow: 2px 2px 4px #4f2352; /* Sombra de texto */
+}
+
+.descarga:hover {
+  color: #ff5733; /* Cambia el color al pasar el cursor */
+  transition: color 0.3s ease-in-out; /* Transición suave del color */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
 }
