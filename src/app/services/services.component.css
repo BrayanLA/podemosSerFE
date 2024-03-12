@@ -32,3 +32,45 @@
   background-size: cover;
   background-position: center;
 }
+h2 {
+  position: relative;
+}
+.tittle1::before {
+  content: '';
+  position: absolute;
+  bottom: 31%;
+  width: 100%; /* Ancho de la página menos el relleno del h2 */
+  height: 6px;
+  background-color: #f47649;
+  z-index: 10;
+  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
+}
+.tittle2::before {
+  content: '';
+  position: absolute;
+  bottom: 31%;
+  width: 100%; /* Ancho de la página menos el relleno del h2 */
+  height: 6px;
+  background-color: #0c8cab;
+  z-index: 10;
+  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
+}
+.tittle3::before {
+  content: '';
+  position: absolute;
+  bottom: 31%;
+  width: 87.5%; /* Ancho de la página menos el relleno del h2 */
+  height: 6px;
+  background-color: #562055;
+  z-index: 10;
+  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
+}
+
+.btn-gigante {
+  padding: 20px 40px; /* Ajusta el tamaño del botón según sea necesario */
+  font-size: 24px; /* Tamaño de fuente */
+}
+.btn{
+  background-color: #0c8cab;
+  border-color: #f47649;
+}

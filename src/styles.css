@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-  margin-top: 6rem;
+  margin-top: 5rem;
   height: 100%;
 }
+
 h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
   font-family: 'DIN Black', sans-serif;
 }
 p {
-  font-family: 'Conduitl', sans-serif;
+  font-family: "ConduitITC Light Italic";
+src: url("../src/assets/fonts/ConduitITCLightItalic.otf") format("otf");
+font-size: 19px;
 }
 

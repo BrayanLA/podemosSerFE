@@ -32,3 +32,17 @@
   background-size: cover;
   background-position: center;
 }
+
+#Galeria .col-lg-4{
+  margin: 0 !important;
+  padding: 25px;
+ }
+
+ #Galeria img{
+  width: 100%;
+  height: 250px;
+}
+
+#Galeria img:hover{
+  border: 5px solid #f7f7f7;
+}
