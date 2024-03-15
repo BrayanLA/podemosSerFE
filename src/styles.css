@@ -1,16 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap');
+
+@import url('https://db.onlinewebfonts.com/c/b1bbe083029c949c2531dc2679f37c54?family=DIN-Black');
+
 body{
   margin-top: 5rem;
   height: 100%;
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-weight: bold;
-  font-family: 'DIN Black', sans-serif;
+  font-family: "DIN-Black";
+
 }
 p {
-  font-family: "ConduitITC Light Italic";
-src: url("../src/assets/fonts/ConduitITCLightItalic.otf") format("otf");
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 font-size: 19px;
 }
 

@@ -29,7 +29,7 @@
 }
 
 #backgroud-img {
-  background-image: url('/assets/img/BG/KONRAD_30mujeres_texturas4.png');
+  background-image: url('../../assets/img/BG/KONRAD_30mujeres_texturas4.png');
   background-size: cover;
   background-position: center;
 }

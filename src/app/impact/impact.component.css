@@ -31,10 +31,61 @@
 }
 
 #backgroud-img {
-  background-image: url('/assets/img/BG/KONRAD_30mujeres_texturas4.png');
+  background-image: url('../../assets/img/BG/KONRAD_30mujeres_texturas4.png');
   background-size: cover;
   background-position: center;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#modal-toggle:checked + .modal {
+  display: flex;
+}
+
+.date-image:hover {
+  cursor: pointer;
+}
+
 
 .year {
   text-align: center;
@@ -42,7 +93,6 @@
   font-size: 80px; /* Tamaño de fuente más grande */
   color:  #f47649; /* Color naranja */
   text-shadow: 2px 2px 4px #f47649; 
- 
 }
 
 .year2 {
@@ -51,7 +101,6 @@
   font-size: 80px; /* Tamaño de fuente más grande */
   color: #4f2352; /* Color morado */
   text-shadow: 2px 2px 4px  #4f2352; 
- 
 }
 
 .year3 {
@@ -60,22 +109,70 @@
   font-size: 80px; /* Tamaño de fuente más grande */
   color: #0c8cab; /* Color azul */
   text-shadow: 2px 2px 4px  #0c8cab; 
- 
 }
 
-.timeline-org {
+
+
+.timeline-org h2 {
   color: #FF5733; /* Color naranja */
   border-color: #FF5733; /* Color naranja */
 }
 
-.timeline-pur{
-  color: #4f2352 ;/* Color púrpura */
+.timeline-pur h2 {
+  color: #4f2352; /* Color púrpura */
   border-color: #4f2352; /* Color púrpura */
 }
 
-.timeline-blue{
-  color:#0c8cab; /* Color púrpura */
-  border-color: #0c8cab; /* Color púrpura */
+.timeline-blue h2 {
+  color: #0c8cab; /* Color azul */
+  border-color: #0c8cab; /* Color azul */
+}
+
+.timeline-title-pur {
+  color: #4f2352; /* Color púrpura */
+  border-color: #4f2352; /* Color púrpura */
+}
+
+
+.timeline-title-blue {
+  color: #0c8cab; /* Color azul */
+  border-color: #0c8cab; /* Color azul */
+}
+.main-timeline:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to bottom, #f47649 33.33%, #4f2352 33.33%, #4f2352 66.66%, #0c8cab 66.66%);
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+/* Asegúrate de que los elementos se comporten como esperas */
+.main-timeline .timeline:nth-child(3n+1) .icon,
+.main-timeline .timeline:nth-child(3n+1) .date-content:before,
+.main-timeline .timeline:nth-child(3n+1) .date-outer:before,
+.main-timeline .timeline:nth-child(3n+1) .date-outer:after {
+  background-color: #f47649; /* Color naranja */
+}
+
+.main-timeline .timeline:nth-child(3n+2) .icon,
+.main-timeline .timeline:nth-child(3n+2) .date-content:before,
+.main-timeline .timeline:nth-child(3n+2) .date-outer:before,
+.main-timeline .timeline:nth-child(3n+2) .date-outer:after {
+  background-color: #4f2352; /* Color morado */
+}
+
+.main-timeline .timeline:nth-child(3n) .icon,
+.main-timeline .timeline:nth-child(3n) .date-content:before,
+.main-timeline .timeline:nth-child(3n) .date-outer:before,
+.main-timeline .timeline:nth-child(3n) .date-outer:after {
+  background-color: #0c8cab; /* Color azul */
 }
 
 h2 {
@@ -103,28 +200,13 @@ h2 {
   z-index: 10;
   left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
 }
- h5
-{
-  font-size: 32px;
 
+h5 {
+  font-size: 32px;
 }
+
 .main-timeline {
   position: relative;
-
-
-}
-
-.main-timeline:before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 100%;
-  background: #f47649;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0
 }
 
 .main-timeline .timeline {
@@ -138,7 +220,7 @@ h2 {
   clear: both
 }
 
-.main-timeline .icon {
+/*.main-timeline .icon {
   width: 28px;
   height: 28px;
   line-height: 18px;
@@ -148,19 +230,9 @@ h2 {
   left: 0;
   bottom: 0;
   right: 0
-}
+}*/
 
-.main-timeline .icon:before,
-.main-timeline .icon:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* transition: all 0.33s ease-out 0s */
-}
+
 
 .main-timeline .icon:before {
   background: #fff;
@@ -196,11 +268,9 @@ h2 {
   margin: auto 0;
   position: absolute;
   top: 0;
-  right: 10px;
+  right: 5px;
   bottom: 0
 }
-
-
 
 .main-timeline .date-outer {
   width: 125px;
@@ -209,20 +279,6 @@ h2 {
   text-align: center;
   margin: auto;
   z-index: 1
-}
-
-.main-timeline .date-outer:before,
-.main-timeline .date-outer:after {
-  content: "";
-  width: 125px;
-  height: 125px;
-  margin: 0 auto;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.33s ease-out 0s
 }
 
 .main-timeline .date-outer:before {
@@ -276,10 +332,10 @@ h2 {
   font-weight: 700;
   line-height: 24px;
   margin: 0 0 15px 0;
-  color:  #f47649
-  
-
+ 
 }
+
+
 
 .main-timeline .description {
   margin-bottom: 0
@@ -290,7 +346,7 @@ h2 {
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content:before {
-  left: 2px
+  left: 5px
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-content {
@@ -309,72 +365,71 @@ h2 {
   /* Oculta cualquier parte de la imagen que se extienda fuera del círculo */
 }
 
-
-
+.timeline-content {
+  text-align: justify;
+}
 
 @media only screen and (max-width: 991px) {
   .main-timeline .date-content {
-      margin-top: 35px
+    margin-top: 35px
   }
   .main-timeline .date-content:before {
-      width: 22.5%
+    width: 22.5%
   }
   .main-timeline .timeline-content {
-      padding: 10px 0 10px 30px
+    padding: 10px 0 10px 30px
   }
   .main-timeline .title {
-      font-size: 17px
+    font-size: 17px
   }
   .main-timeline .timeline:nth-child(2n) .timeline-content {
-      padding: 10px 30px 10px 0
+    padding: 10px 30px 10px 0
   }
 }
 
 @media only screen and (max-width: 767px) {
   .main-timeline:before {
-      margin: 0;
-      left: 7px
+    margin: 0;
+    left: 7px
   }
   .main-timeline .timeline {
-      margin-bottom: 20px
+    margin-bottom: 20px
   }
   .main-timeline .timeline:last-child {
-      margin-bottom: 0
+    margin-bottom: 0
   }
   .main-timeline .icon {
-      margin: auto 0
+    display: none;
   }
   .main-timeline .date-content {
-      width: 95%;
-      float: right;
-      margin-top: 0
+    width: 95%;
+    float: right;
+    margin-top: 0
   }
   .main-timeline .date-content:before {
-      display: none
+    display: none
   }
   .main-timeline .date-outer {
-      width: 110px;
-      height: 110px
+    display: none;
   }
   .main-timeline .date-outer:before,
   .main-timeline .date-outer:after {
-      width: 110px;
-      height: 110px
+    width: 110px;
+    height: 110px
   }
   .main-timeline .date {
-      top: 30%
+    top: 30%
   }
   .main-timeline .year {
-      font-size: 100px
+    font-size: 100px
   }
   .main-timeline .timeline-content,
   .main-timeline .timeline:nth-child(2n) .timeline-content {
-      width: 95%;
-      text-align: center;
-      padding: 10px 0
+    width: 95%;
+    text-align: center;
+    padding: 10px 0
   }
   .main-timeline .title {
-      margin-bottom: 10px
+    margin-bottom: 10px
   }
-
 }
