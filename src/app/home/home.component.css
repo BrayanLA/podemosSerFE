@@ -23,10 +23,10 @@
 
 #text-img {
   color: #4f2352;;
-  font-size: 90px;
+  font-size: 80px;
   font-family: 'LEMONMILK-Bold', sans-serif; 
-    font-size: 8rem; /* Tamaño de fuente más grande */
-    font-weight: 900; /* Grosor de la fuente */
+    /*font-size: 8rem; /* Tamaño de fuente más grande */
+    font-weight: 120; /* Grosor de la fuente */
     text-shadow: 2px 2px 2px rgb(73,46,102); /* Efecto de relieve */
   
 }
@@ -46,13 +46,13 @@
 
 
 p {
-  color: white; /* Color de texto blanco */
+  color: black; /* Color de texto blanco */
   text-align: justify;
 }
 
-.bold-purple {
+.bold-orange {
   font-weight: bold; /* Texto en negrita */
-  color:#4f2352; /* Color morado */
+  color: #ff5733; /* Color morado */
 }
 
 

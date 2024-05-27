@@ -1,15 +1,17 @@
 nav {
-  background-color: #562055;
+  background-color: #fffcff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
 .nav-link{
   margin-right: 20px;
-  color: white;
+  color: #0c8cab;
   transition: transform 0.3s ease; /* Agrega una transición suave */
+  font-weight: bold;
 }
 
 .nav-link:hover {
   transform: scale(1.1); /* Agrandar el tamaño del enlace en un 10% */
+  color:  #f47649;
 }
