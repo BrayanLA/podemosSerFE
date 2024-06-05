@@ -10,3 +10,10 @@ footer {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+@media (max-width: 480px) {
+  #text-img{
+
+    font-size: 41px;
+  }
+
+}

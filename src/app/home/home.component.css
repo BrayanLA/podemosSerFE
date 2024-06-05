@@ -23,13 +23,12 @@
 
 #text-img {
   color: #4f2352;;
-  font-size: 80px;
-  font-family: 'LEMONMILK-Bold', sans-serif; 
-    /*font-size: 8rem; /* Tamaño de fuente más grande */
-    font-weight: 140; /* Grosor de la fuente */
-    text-shadow: 2px 2px 2px rgb(73,46,102);
-    text-align: center; /* Efecto de relieve */
-  
+  font-size: 90px;
+  font-family: 'LEMONMILK-Bold', sans-serif;
+    font-size: 8rem; /* Tamaño de fuente más grande */
+    font-weight: 900; /* Grosor de la fuente */
+    text-shadow: 2px 2px 2px rgb(73,46,102); /* Efecto de relieve */
+
 }
 
 #backgroud-img {
@@ -56,10 +55,10 @@ p {
   color: #ff5733; /* Color naranja */
 }
 
-.img-home{
-  max-width: 230px;
-  height: auto;
-  margin-left:260px;
+
+.banda {
+    background-color: #0c8cab;
+    border-radius: 10px;
 }
 
 #carouselExampleSlidesOnly {
@@ -83,7 +82,7 @@ iframe {
 
 
 
-h3.descarga { 
+h3.descarga {
   color: #4f2352; /* Color morado */
   font-size: 40px; /* Tamaño grande */
  /* text-transform: uppercase; /* Convierte el texto a mayúsculas */
@@ -137,7 +136,7 @@ h3.descarga {
     (#0c8cab) 0%
     (#0c8cab) 8%
     (#0c8cab) 92%
-    (#0c8cab) 100% 
+    (#0c8cab) 100%
    /* hsl(248, 39%, 39%) 0%,
     hsl(248, 39%, 49%) 8%,
     hsl(248, 39%, 39%) 92%,
@@ -299,6 +298,12 @@ h3.descarga {
     width: 100%;
     height: 100%;
   }
+}
 
-  
+@media (max-width: 480px) {
+  #text-img{
+
+    font-size: 41px;
+  }
+
 }

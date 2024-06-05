@@ -18,6 +18,16 @@
   background: linear-gradient(178deg, rgba(255,255,255,0) 42%, rgba(12,140,171,1) 100%);
 }
 
+.img-cards{
+  border: 20px solid #0c8cab;
+}
+.img-cards2{
+  border: 20px 20px 20px 20px solid #562055;
+}
+.img-cards3{
+  border: 20px solid #f47649;
+}
+
 #text-img {
   color: white;
   font-size: 90px;
@@ -35,35 +45,53 @@
 h2 {
   position: relative;
 }
+
+.tittle1{
+  border: 21px solid #0c8cab;
+border-radius: 0px 25px 25px 0px;
+background-color: #0c8cab;
+}
+
+.tittle2{
+  border: 21px solid #562055;
+border-radius: 0px 25px 25px 0px;
+background-color: #562055;
+}
+.tittle3{
+  border: 21px solid #f47649;
+border-radius: 0px 25px 25px 0px;
+background-color: #f47649;
+}
+
 .tittle1::before {
   content: '';
   position: absolute;
-  bottom: 31%;
-  width: 100%; /* Ancho de la página menos el relleno del h2 */
+  bottom: 1%;
+  width: 91%; /* Ancho de la página menos el relleno del h2 */
   height: 6px;
-  background-color: #f47649;
+  background-color: #ffffff;
   z-index: 10;
-  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
+  left: -1vw; /* Posición inicial desde el borde izquierdo de la página */
 }
 .tittle2::before {
   content: '';
   position: absolute;
-  bottom: 31%;
-  width: 100%; /* Ancho de la página menos el relleno del h2 */
+  bottom: 1%;
+  width: 91%; /* Ancho de la página menos el relleno del h2 */
   height: 6px;
-  background-color: #0c8cab;
+  background-color: #ffffff;
   z-index: 10;
-  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
+  left: -1vw; /* Posición inicial desde el borde izquierdo de la página */
 }
 .tittle3::before {
   content: '';
   position: absolute;
-  bottom: 31%;
-  width: 87.5%; /* Ancho de la página menos el relleno del h2 */
+  bottom: 1%;
+  width: 91%; /* Ancho de la página menos el relleno del h2 */
   height: 6px;
-  background-color: #562055;
+  background-color: #ffffff;
   z-index: 10;
-  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
+  left: -1vw; /* Posición inicial desde el borde izquierdo de la página */
 }
 
 .btn-gigante {
