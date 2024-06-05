@@ -26,8 +26,9 @@
   font-size: 80px;
   font-family: 'LEMONMILK-Bold', sans-serif; 
     /*font-size: 8rem; /* Tamaño de fuente más grande */
-    font-weight: 120; /* Grosor de la fuente */
-    text-shadow: 2px 2px 2px rgb(73,46,102); /* Efecto de relieve */
+    font-weight: 140; /* Grosor de la fuente */
+    text-shadow: 2px 2px 2px rgb(73,46,102);
+    text-align: center; /* Efecto de relieve */
   
 }
 
@@ -40,26 +41,25 @@
 @font-face {
   font-family: 'LEMONMILK-RegularItalic'; /* Nombre de la fuente */
   src: url('/src/assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf') format('opentype'); /* Ruta al archivo de fuente */
-  font-weight: bold; /* Peso de la fuente */
+ /* font-weight: bold; /* Peso de la fuente */
   font-style: normal; /* Estilo de la fuente */
 }
 
 
 p {
-  color: black; /* Color de texto blanco */
-  text-align: justify;
+  /* Color de texto blanco */
+  text-align:left;
 }
 
 .bold-orange {
   font-weight: bold; /* Texto en negrita */
-  color: #ff5733; /* Color morado */
+  color: #ff5733; /* Color naranja */
 }
 
-
-.banda {
-    background-color: #0c8cab;
-    border-radius: 10px;
-     
+.img-home{
+  max-width: 230px;
+  height: auto;
+  margin-left:260px;
 }
 
 #carouselExampleSlidesOnly {
@@ -228,6 +228,68 @@ h3.descarga {
   flex: 10;
 }
 
+.custom-btn-primary {
+  background-color: #4f2352;
+  border-color: #4f2352;
+  padding: 12px 24px;
+  font-size: 1.25rem; /* Aumenta el tamaño de la fuente */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-btn-primary:hover {
+  background-color: #4f2352;
+  border-color: #4f2352;
+}
+.arrow-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+.arrow-right {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid #0c8cab;
+  border-right: 3px solid #0c8cab;
+  transform: rotate(45deg);
+}
+
+.custom-btn-primary2 {
+  background-color: #ff5733;
+  border-color: #ff5733;
+  padding: 12px 24px;
+  font-size: 1.25rem; /* Aumenta el tamaño de la fuente */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-btn-primary2:hover {
+  background-color: #ff5733;
+  border-color: #ff5733;
+}
+
+.arrow-right2 {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid #ff5733;
+  border-right: 3px solid #ff5733;
+  transform: rotate(45deg);
+}
+
+.card-img-top.first-card {
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Para mantener la imagen ajustada dentro del contenedor */
+}
+
+
 .slide.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
@@ -237,4 +299,6 @@ h3.descarga {
     width: 100%;
     height: 100%;
   }
+
+  
 }
