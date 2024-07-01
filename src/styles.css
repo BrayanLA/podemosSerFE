@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @import url('https://db.onlinewebfonts.com/c/b1bbe083029c949c2531dc2679f37c54?family=DIN-Black');
 
@@ -13,9 +13,37 @@ h1,h2,h3,h4,h5,h6{
 
 }
 p {
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 700;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
   font-style: normal;
-font-size: 19px;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1); /* Ajusta el color según sea necesario */
+}
+
+.circle1 {
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  left: 10%;
+  background-color: #f47649; /* Color naranja */
+}
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 30%;
+  background-color: #0c8cab; /* Color morado */
+}
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  top: 70%;
+  right: 15%;
+  background-color: #20B2AA; /* Color azul-verde */
 }
 

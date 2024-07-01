@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ImpactComponent } from './impact/impact.component';
-import { PsmComponent } from './psm/psm.component';
 import { NumberAnimationDirective } from './number-animation.directive';
 
 
@@ -27,7 +26,6 @@ const bootstrap = require('bootstrap')
     AboutComponent,
     ServicesComponent,
     ImpactComponent,
-    PsmComponent,
     NumberAnimationDirective
   ],
   imports: [

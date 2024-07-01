@@ -19,14 +19,12 @@
 }
 
 .img-cards{
-  border: 20px solid #0c8cab;
+  border-top-right-radius: 65px;
+  position: relative;
+  z-index: 10;
+  object-fit: cover;
 }
-.img-cards2{
-  border: 20px 20px 20px 20px solid #562055;
-}
-.img-cards3{
-  border: 20px solid #f47649;
-}
+
 
 #text-img {
   color: white;
@@ -41,54 +39,84 @@
   background-image: url('../../assets/img/BG/KONRAD_30mujeres_texturas4.png');
   background-size: cover;
   background-position: center;
+  z-index: -10;
 }
 h2 {
   position: relative;
 }
-
 .tittle1{
-  border: 21px solid #0c8cab;
-border-radius: 0px 25px 25px 0px;
-background-color: #0c8cab;
+  position: relative;
+  z-index: 1;
 }
-
 .tittle2{
-  border: 21px solid #562055;
-border-radius: 0px 25px 25px 0px;
-background-color: #562055;
+  position: relative;
+  z-index: 1;
 }
 .tittle3{
-  border: 21px solid #f47649;
-border-radius: 0px 25px 25px 0px;
-background-color: #f47649;
+  position: relative;
+  z-index: 1;
 }
 
+
+.tittle1::after {
+  content: '';
+  position: absolute;
+  left: -2vw; /* Posición inicial desde el borde izquierdo de la página */
+  bottom: -32.5%;
+  width: 86%;
+  height: 75px;
+  background-color: #0c8cab;
+  z-index: -1 ;
+  border-radius: 45px 45px 45px 45px; /* Posición inicial desde el borde izquierdo de la página */
+}
 .tittle1::before {
   content: '';
   position: absolute;
   bottom: 1%;
-  width: 91%; /* Ancho de la página menos el relleno del h2 */
-  height: 6px;
+  width: 75%; /* Ancho de la página menos el relleno del h2 */
+  height: 4px;
   background-color: #ffffff;
   z-index: 10;
   left: -1vw; /* Posición inicial desde el borde izquierdo de la página */
+}
+.tittle2::after {
+  content: '';
+  position: absolute;
+  left: -2vw; /* Posición inicial desde el borde izquierdo de la página */
+  bottom: -32.5%;
+  width: 86%;
+  height: 75px;
+  background-color: #562055;
+  z-index: -1 ;
+  border-radius: 45px 45px 45px 45px; /* Posición inicial desde el borde izquierdo de la página */
 }
 .tittle2::before {
   content: '';
   position: absolute;
   bottom: 1%;
-  width: 91%; /* Ancho de la página menos el relleno del h2 */
-  height: 6px;
+  width: 75%; /* Ancho de la página menos el relleno del h2 */
+  height: 4px;
   background-color: #ffffff;
   z-index: 10;
   left: -1vw; /* Posición inicial desde el borde izquierdo de la página */
+}
+.tittle3::after {
+  content: '';
+  position: absolute;
+  left: -2vw; /* Posición inicial desde el borde izquierdo de la página */
+  bottom: -32.5%;
+  width: 86%;
+  height: 75px;
+  background-color: #f47649;
+  z-index: -1 ;
+  border-radius: 45px 45px 45px 45px; /* Posición inicial desde el borde izquierdo de la página */
 }
 .tittle3::before {
   content: '';
   position: absolute;
   bottom: 1%;
-  width: 91%; /* Ancho de la página menos el relleno del h2 */
-  height: 6px;
+  width: 75%; /* Ancho de la página menos el relleno del h2 */
+  height: 4px;
   background-color: #ffffff;
   z-index: 10;
   left: -1vw; /* Posición inicial desde el borde izquierdo de la página */
@@ -102,3 +130,5 @@ background-color: #f47649;
   background-color: #0c8cab;
   border-color: #f47649;
 }
+
+

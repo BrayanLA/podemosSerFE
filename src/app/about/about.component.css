@@ -4,9 +4,16 @@
 #img-text {
   position: relative;
   background-image: url('../../assets/img/BG/08 Agosto_Ibagué.jpg');
-  background-size: cover;
+  object-fit:cover;
+  /* background-size: cover; */
   background-position: center;
   height: 376px;
+}
+.custom-container {
+  display: flex;
+            flex-direction: row;
+            justify-content: flex-end; /* Alinea el contenido hacia abajo */
+            height: 100%; /* Centra el contenedor */
 }
 
 #img-text::before {
@@ -44,13 +51,6 @@ a{
 }
 
 
-.img-autoras {
-  border-radius: 15px;
-  position: relative;
-  border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
-
 .img-about{
   max-width: 230px;
   height: auto;
@@ -70,22 +70,76 @@ h2 {
   position: relative;
   color: white;
 }
+.autNameA::before{
+  content: '';
+  position: absolute;
+  left: -0.3vw;
+  bottom: 3.3%;
+  width: 105%;
+  height: 275px;
+  background-color: #f47649;
+  z-index: -1;
+  border-radius: 30px;
+}
+.autNameA{
+  font-size: 31px !important;
+}
+.autNameA::after{
+  content: '';
+  position: absolute;
+  left: 9.4vw;
+  bottom: 73.8%;
+  width: 30%;
+  height: 24%;
+  background-color: #0c8cab;
+  z-index: -1;
+  border-radius: 0 50% 50% 0;
+}
+
+.autNameT::before{
+  content: '';
+  position: absolute;
+  left: -0.8vw;
+  bottom: 5%;
+  width: 105%;
+  height: 260px;
+  background-color: #0c8cab;
+  z-index: -1;
+  border-radius: 30px;
+}
+.autNameT{
+  font-size: 31px !important;
+}
+.autNameT::after{
+  content: '';
+  position: absolute;
+  left: 9.4vw;
+  bottom: 71.8%;
+  width: 30%;
+  height: 24%;
+  background-color: #f47649;
+  z-index: -1;
+  border-radius: 0 50% 50% 0;
+}
+.autText{
+  font-size: 14px !important;
+}
 .tittle-style::before {
   content: '';
   position: absolute;
-  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
-  bottom: -6%;
+  left: -16vw;
+  bottom: -32%;
   width: 80%;
   height: 75px;
   background-color: #f47649;
-  z-index: 0 ;
+  z-index: 0;
   border-radius: 0 30px 30px 0;
 }
 .tittle-style::after{
   content: '';
   position: absolute;
-  left: -16vw; /* Posición inicial desde el borde izquierdo de la página */
-  bottom: -4.5%;
+  left: -16vw;
+  bottom: -30.5%;
   width: 72%;
   height: 6px;
   background-color: #ffffff;
@@ -93,3 +147,79 @@ h2 {
 }
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px;
+}
+
+.circlle {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+}
+
+.orange {
+  background-color: #f47649;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50% 0 0 50%;
+  }
+  .image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 50% 50% 0;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+}
+
+.purple {
+  background-color: #4f2352;
+}
+
+.profile-card {
+  color: white;
+  display: flex;
+  justify-content: flex-end;/* Color del texto blanco */
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px; /* Bordes redondeados */
+  max-width: 350px;
+  max-width: 350px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.profile-cardT {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 350px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-card p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+.img-autoras{
+
+  max-width: 390px;
+  width: auto;
+  height: 390px;
+}

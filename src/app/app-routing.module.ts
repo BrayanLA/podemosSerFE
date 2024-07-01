@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
-import { PsmComponent } from './psm/psm.component';
 import { ImpactComponent } from './impact/impact.component';
 
 const routes: Routes = [
@@ -11,7 +10,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, data: { animation: 'About' } },
   { path: 'services', component: ServicesComponent, data: { animation: 'Services' } },
   { path: 'impact', component: ImpactComponent, data: { animation: 'Impact' } },
-  { path: 'psm', component: PsmComponent, data: { animation: 'Psm' } },
 ];
 
 @NgModule({

@@ -15,12 +15,19 @@ nav {
   transform: scale(1.1); /* Agrandar el tamaño del enlace en un 10% */
   color:  #f47649;
 }
+/*Media query para celulares*/
 @media (max-width: 480px) {
   #KasLogo{
     display: none;
   }
   #PdsLogo{
-    width:  80px;
-    height: 30px;
+    height: 50px;
+  }
+}
+
+/*Media query para tabletas*/
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+      font-size: 18px;
   }
 }
