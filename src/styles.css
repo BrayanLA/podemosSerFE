@@ -26,24 +26,24 @@ p {
 .circle1 {
   width: 150px;
   height: 150px;
-  top: 20%;
-  left: 10%;
+  top: 80%;
+  right: 95%;
   background-color: #f47649; /* Color naranja */
 }
 
 .circle2 {
   width: 100px;
   height: 100px;
-  top: 50%;
-  left: 30%;
+  top: 260%;
+  left: 97%;
   background-color: #0c8cab; /* Color morado */
 }
 
 .circle3 {
   width: 200px;
   height: 200px;
-  top: 70%;
-  right: 15%;
+  top: 100%;
+  left: 95%;
   background-color: #20B2AA; /* Color azul-verde */
 }
 
