@@ -303,9 +303,22 @@ h3.descarga {
   }
 
   p {
-    font-size: 10px;
+    font-size: 9px;
     text-align:left;
     letter-spacing: 1px;
+  }
+  
+  .responsive-img {
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    height: auto;   /* Mantiene la proporción de la imagen */
+  }
+
+  h3.descarga {
+    color: #4f2352; /* Color morado */
+    font-size: 21px; /* Tamaño grande */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-top: 4px; /* Espacio superior */
+    text-shadow: 2px 2px 4px #4f2352; /* Sombra de texto */
   }
 
 }

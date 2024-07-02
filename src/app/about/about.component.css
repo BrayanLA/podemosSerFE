@@ -223,3 +223,47 @@ h2 {
   width: auto;
   height: 390px;
 }
+
+
+@media (max-width: 480px) {
+  #text-img{
+
+    font-size: 41px;
+  }
+
+  .image img {
+    width: 73%;
+    height: 86%;
+    object-fit: cover;
+    border-radius: 50% 0 0 50%;
+    }
+
+    .image1 img {
+      width: 73%;
+      height: 86%;
+      object-fit: cover;
+      border-radius: 0 50% 50% 0;
+  }
+  
+
+    .circlle {
+      width: 85%;
+      height: 0;
+      padding-bottom: 90%;
+      border-radius: 50%;
+    }
+
+    .square {
+      width: 77%;
+      height: 85%;
+    }
+
+    .custom-paragraph {
+      font-size: 0.7rem; /* Tamaño de la fuente */
+      color: #4f2352;   /* Color morado */
+    }
+
+    .autText{
+      font-size: 11px !important;
+    }
+}
