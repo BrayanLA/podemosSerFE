@@ -17,33 +17,33 @@ p {
   font-weight: 500;
   font-style: normal;
 }
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.1); /* Ajusta el color según sea necesario */
-}
 
-.circle1 {
-  width: 150px;
-  height: 150px;
-  top: 80%;
-  right: 95%;
-  background-color: #f47649; /* Color naranja */
-}
+/*.circle { */
+ /* position: absolute;*/
+ /* border-radius: 50%;*/
+ /* background-color: rgba(0, 0, 0, 0.1); /* Ajusta el color según sea necesario */
+/*} */
 
-.circle2 {
-  width: 100px;
-  height: 100px;
-  top: 260%;
-  left: 97%;
-  background-color: #0c8cab; /* Color morado */
-}
+/*.circle1 {*/
+  /*width: 150px;*/
+ /* height: 150px;*/
+ /* top: 80%;*/
+ /* right: 95%;*/
+/*  background-color: #f47649; /* Color naranja */ 
+/*}*/
 
-.circle3 {
-  width: 200px;
-  height: 200px;
-  top: 100%;
-  left: 95%;
-  background-color: #20B2AA; /* Color azul-verde */
-}
+/*.circle2 {*/
+  /*width: 100px;*/
+ /* height: 100px;*/
+ /* top: 260%;*/
+ /* left: 97%;*/
+  /*background-color: #0c8cab; /* Color morado */
+/*}*/
 
+/*.circle3 {*/
+ /* width: 200px;*/
+/*  height: 200px;*/
+ /* top: 100%;*/
+ /* left: 95%;*/
+  /*background-color: #20B2AA; /* Color azul-verde */
+/*}*/
