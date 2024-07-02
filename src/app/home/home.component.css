@@ -304,6 +304,12 @@ h3.descarga {
     font-size: 41px;
   }
 
+  p {
+    font-size: 10px;
+    text-align:left;
+    letter-spacing: 1px;
+  }
+
 }
 /* Tabletas en modo retrato */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
