@@ -29,12 +29,12 @@
         </ul>
       </div>
       <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-        <form>
+        <form (ngSubmit)="subscribe()">
           <h5>¡Manténte actualizado!</h5>
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Email</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email">
-            <button class="btn btn-primary" type="button" style="background-color: #0C8CAB; border-color: #0C8CAB;">Subscribe</button>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email" [(ngModel)]="email" name="email">
+            <button class="btn btn-primary" type="button" (click)="subscribe()" style="background-color: #0C8CAB; border-color: #0C8CAB;">Subscribe</button>
           </div>
         </form>
       </div>

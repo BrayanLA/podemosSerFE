@@ -223,3 +223,37 @@ h2 {
   width: auto;
   height: 390px;
 }
+@media (max-width: 480px) {
+  #text-img{
+
+    font-size: 41px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+  }
+}
+/* Tabletas en modo retrato */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  /* Estilos aquí */
+}
+
+/* Tabletas en modo paisaje */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos aquí */
+}
+/* Computadoras de escritorio pequeñas/laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  /* Estilos aquí */
+}
+
+/* Computadoras de escritorio grandes */
+@media only screen and (min-width: 1200px) {
+  /* Estilos aquí */
+}
+/* Monitores grandes */
+@media only screen and (min-width: 1600px) {
+  /* Estilos aquí */
+}
