@@ -130,5 +130,38 @@ h2 {
   background-color: #0c8cab;
   border-color: #f47649;
 }
+.circle {
+  position: absolute;
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: 200px; /* Ajusta el tamaño según sea necesario */
+  background-color: rgba(0, 0, 0, 0.1); /* Ajusta el color según sea necesario */
+   /* Hace un medio círculo */
+}
 
+.circle1 {
+  width: 150px;
+  height: 300px;
+  top: 57%;
+  right: 0px;
+  background-color: #f47649;
+  clip-path: ellipse(100% 50% at 100% 50%);
+}
+
+.circle2 {
+  width: 600px;
+  height: 300px;
+  top: 125%;
+  left: 0px;
+  background-color: #0c8cab;
+  clip-path: ellipse(25% 50% at 0% 50%); /* Ajusta el valor para obtener las esquinas redondeadas */
+}
+
+.circle3 {
+  width: 80px;
+  height: 80px;
+  top: 107%;
+  right: 174px;
+  background-color: #562055;
+  border-radius: 20%;
+}
 

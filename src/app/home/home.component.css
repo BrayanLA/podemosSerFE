@@ -289,6 +289,44 @@ h3.descarga {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
+.circle {
+  position: absolute;
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: 200px; /* Ajusta el tamaño según sea necesario */
+   /* Ajusta el color según sea necesario */
+   /* Hace un medio círculo */
+}
+
+.circle1 {
+  width: 150px;
+  height: 300px;
+  top: 57%;
+  right: 0px;
+
+  background-color: #f47649;
+  clip-path: ellipse(100% 50% at 100% 50%);
+}
+
+.circle2 {
+  position: absolute;
+  width: 478px;
+  height: 256px;
+  top: 100%;
+  left: -110px;
+  transform: rotate(90deg);
+  background-image: url('../../assets/img/Generales/floreicta-Photoroom.png');
+
+}
+
+.circle3 {
+  width: 80px;
+  height: 80px;
+  top: 107%;
+  right: 174px;
+  background-color: #562055;
+  border-radius: 20%;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -309,7 +347,7 @@ h3.descarga {
     text-align:left;
     letter-spacing: 1px;
   }
-  
+
   .responsive-img {
     max-width: 100%; /* La imagen no será más ancha que su contenedor */
     height: auto;   /* Mantiene la proporción de la imagen */
@@ -331,11 +369,55 @@ h3.descarga {
 
 /* Tabletas en modo paisaje */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Estilos aquí */
+
 }
 /* Computadoras de escritorio pequeñas/laptops */
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  /* Estilos aquí */
+  #img-text {
+    position: relative;
+    background-image: url('../../assets/img/Generales/homepagepng.png');
+    background-size: cover;
+    background-position: center;
+    height: 156px;
+  }
+  p{
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  .circle {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 200px; /* Ajusta el tamaño según sea necesario */
+     /* Ajusta el color según sea necesario */
+     /* Hace un medio círculo */
+  }
+
+  .circle1 {
+    width: 75px;
+    height: 150px;
+    top: 92%;
+    right: 0px;
+    background-color: #f47649;
+    clip-path: ellipse(100% 50% at 100% 50%);
+  }
+
+  .circle2 {
+    display: none;
+  }
+
+  .circle3 {
+    width: 70px;
+    height: 70px;
+    top: 169%;
+    right: 37px;
+    background-color: #562055;
+    border-radius: 20%;
+  }
+  .ytp-cued-thumbnail-overlay-image{
+    
+  }
 }
 
 /* Computadoras de escritorio grandes */
