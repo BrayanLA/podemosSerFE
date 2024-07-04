@@ -36,7 +36,7 @@
 }
 
 p {
-  font-size: 22px;
+  font-size: 1.7rem;
   text-align:left;
   letter-spacing: 1px;
 }
@@ -342,6 +342,27 @@ h3.descarga {
     font-size: 41px;
   }
 
+  #img-text {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 176px;
+}
+
+.slide {
+  height: 40vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
   p {
     font-size: 9px;
     text-align:left;
@@ -359,6 +380,17 @@ h3.descarga {
     letter-spacing: 2px; /* Espaciado entre letras */
     margin-top: 4px; /* Espacio superior */
     text-shadow: 2px 2px 4px #4f2352; /* Sombra de texto */
+  }
+  .circle1 {
+    display: none;
+  }
+
+  .circle2 {
+    display: none;
+  }
+
+  .circle3 {
+    display: none;
   }
 
 }
@@ -415,14 +447,72 @@ h3.descarga {
     background-color: #562055;
     border-radius: 20%;
   }
-  .ytp-cued-thumbnail-overlay-image{
-    
-  }
+
 }
 
 /* Computadoras de escritorio grandes */
-@media only screen and (min-width: 1200px) {
-  /* Estilos aquí */
+@media only screen and (min-width: 1200px ) and (max-width:1400px) {
+
+  #img-text {
+    position: relative;
+    background-image: url('../../assets/img/Generales/homepagepng.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  .circle {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 200px; /* Ajusta el tamaño según sea necesario */
+     /* Ajusta el color según sea necesario */
+     /* Hace un medio círculo */
+  }
+  iframe{
+    width: 70%;
+  }
+  .circle1 {
+    width: 100px;
+        height: 200px;
+        top: 76%;
+        right: 0px;
+        background-color: #f47649;
+        clip-path: ellipse(100% 50% at 100% 50%);
+  }
+
+  .circle2 {
+    display: none;
+  }
+
+  .circle3 {
+    width: 70px;
+    height: 70px;
+    top: 133%;
+    right: 37px;
+    background-color: #562055;
+    border-radius: 20%;
+  }
+  .card-img-top.first-card {
+    height: 325px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Para mantener la imagen ajustada dentro del contenedor */
+  }
+  #text-img {
+    color: #4f2352;
+    justify-content: center;
+    font-family: 'LEMONMILK-Bold', sans-serif;
+    font-size: 4.2rem;
+    font-weight: 530;
+    text-shadow: 2px 2px 2px rgb(73, 46, 102);
+    letter-spacing: 1px;
+}
+p {
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.responsive-img{
+  width: 73%;
+  height: 96%;
+}
 }
 /* Monitores grandes */
 @media only screen and (min-width: 1600px) {

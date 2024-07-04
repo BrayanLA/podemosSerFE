@@ -17,3 +17,40 @@ footer {
   }
 
 }
+
+/* Ceular */
+@media (max-width: 480px) {
+
+
+}
+/* Tabletas en modo retrato */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  /* Estilos aquí */
+}
+
+/* Tabletas en modo paisaje */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+/* Computadoras de escritorio pequeñas/laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+}
+
+/* Computadoras de escritorio grandes */
+@media only screen and (min-width: 1200px ) and (max-width:1400px) {
+
+  .half-bottom {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
+    position: absolute;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+
+}
+/* Monitores grandes */
+@media only screen and (min-width: 1600px) {
+  /* Estilos aquí */
+}
