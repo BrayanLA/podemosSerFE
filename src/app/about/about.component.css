@@ -228,42 +228,119 @@ h2 {
 @media (max-width: 480px) {
   #text-img{
 
-    font-size: 41px;
+    font-size: 32px;
   }
 
-  .image img {
-    width: 73%;
-    height: 86%;
-    object-fit: cover;
-    border-radius: 50% 0 0 50%;
-    }
+  .grid-container {
 
-    .image1 img {
-      width: 73%;
-      height: 86%;
-      object-fit: cover;
-      border-radius: 0 50% 50% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 126px);
+    grid-template-rows: repeat(2, 126px);
+    gap: 8px;
+    flex-direction: column;
   }
 
+  .custom-paragraph {
 
-    .circlle {
-      width: 85%;
-      height: 0;
-      padding-bottom: 90%;
-      border-radius: 50%;
-    }
+    font-size: 8px;
+    color: #4f2352;
+  }
 
-    .square {
-      width: 77%;
-      height: 85%;
-    }
+  .tittle-style::before {
+        content: '';
+    position: absolute;
+    left: -12vw;
+    bottom: -212%;
+    width: 80%;
+    height: 75px;
+    background-color: #f47649;
+    z-index: 0;
+    border-radius: 0 30px 30px 0;
+  }
+  .tittle-style::after{
+    content: '';
+    position: absolute;
+    left: -16vw;
+    bottom: -205.5%;
+    width: 81%;
+    height: 6px;
+    background-color: #ffffff;
+    z-index: 0;
+  }
 
-    .custom-paragraph {
-      font-size: 0.7rem; /* Tamaño de la fuente */
-      color: #4f2352;   /* Color morado */
-    }
+  .custom-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .img-autoras{
+    max-width: 300px;
+    width: auto;
+    height: 260px;
+  }
+
+  .autNameT::before{
+    content: '';
+    position: absolute;
+    left: -0.8vw;
+    bottom: 12%;
+    width: 104%;
+    height: 261px;
+    background-color: #0c8cab;
+    z-index: -1;
+    border-radius: 34px;
+  }
+
+  .autNameT::after{
+        content: '';
+    position: absolute;
+    left: 56.4vw;
+    bottom: 80.8%;
+    width: 17%;
+    height: 17%;
+    background-color: #f47649;
+    z-index: -1;
+    border-radius: 0 50% 50% 0;
+
+  }
+
+  h2 {
+    position: relative;
+    color: white;
+    font-size: 30px;
+  }
+
+  .autNameA::before{
+       content: '';
+    position: absolute;
+    left: -0.8vw;
+    bottom: 5%;
+    width: 104%;
+    height: 261px;
+    background-color: #f47649;
+    z-index: -1;
+    border-radius: 30px;
+  }
+
+  .autNameA::after{
+    content: '';
+    position: absolute;
+    left: 55.4vw;
+    bottom: 75.8%;
+    width: 16%;
+    height: 15%;
+    background-color: #0c8cab;
+    z-index: -1;
+    border-radius: 0 50% 50% 0;
+  }
+
+  
+
+
 
     .autText{
-      font-size: 11px !important;
+      font-size: 12px !important;
     }
 }
