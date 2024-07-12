@@ -56,18 +56,21 @@ h2 {
   position: relative;
   z-index: 1;
 }
+p{
+  font-size: 1.2rem;
+}
 
 
 .tittle1::after {
   content: '';
   position: absolute;
-  left: -2vw; /* Posición inicial desde el borde izquierdo de la página */
-  bottom: -32.5%;
-  width: 86%;
-  height: 75px;
+  left: -2vw;
+  bottom: -16.5%;
+  width: 90%;
+  height: 62px;
   background-color: #0c8cab;
-  z-index: -1 ;
-  border-radius: 45px 45px 45px 45px; /* Posición inicial desde el borde izquierdo de la página */
+  z-index: -1;
+  border-radius: 45px 45px 45px 45px;
 }
 .tittle1::before {
   content: '';
@@ -82,13 +85,13 @@ h2 {
 .tittle2::after {
   content: '';
   position: absolute;
-  left: -2vw; /* Posición inicial desde el borde izquierdo de la página */
-  bottom: -32.5%;
-  width: 86%;
-  height: 75px;
+  left: -2vw;
+  bottom: -16.5%;
+  width: 90%;
+  height: 62px;
   background-color: #562055;
-  z-index: -1 ;
-  border-radius: 45px 45px 45px 45px; /* Posición inicial desde el borde izquierdo de la página */
+  z-index: -1;
+  border-radius: 45px 45px 45px 45px;
 }
 .tittle2::before {
   content: '';
@@ -103,13 +106,16 @@ h2 {
 .tittle3::after {
   content: '';
   position: absolute;
-  left: -2vw; /* Posición inicial desde el borde izquierdo de la página */
-  bottom: -32.5%;
+  left: -2vw;
+  bottom: -14.5%;
   width: 86%;
-  height: 75px;
+  height: 62px;
   background-color: #f47649;
-  z-index: -1 ;
+  z-index: -1;
   border-radius: 45px 45px 45px 45px; /* Posición inicial desde el borde izquierdo de la página */
+}
+#PersonOrange{
+  padding-top: 28px;
 }
 .tittle3::before {
   content: '';
@@ -164,4 +170,80 @@ h2 {
   background-color: #562055;
   border-radius: 20%;
 }
+#text-Spc{
+  padding-left: 43px;
+  font-size: 26px;
+}
 
+@media only screen and (min-width: 1200px ) and (max-width:1400px) {
+
+  h2{
+    font-size: 1.6rem;
+  }
+  #text-img{
+    right: 35px;
+  }
+  .tittle1::before{
+    width: 92%;
+  }
+  .tittle2::before{
+    width: 92%;
+  }
+  .tittle3::before{
+    width: 92%;
+  }
+  .tittle1::after{
+
+    width: 98%;
+
+  }
+
+  .tittle2::after{
+
+    width: 98%;
+
+  }
+
+  .tittle3::after{
+  content: '';
+  position: absolute;
+  left: -2vw;
+  bottom: -32.5%;
+  width: 98%;
+  height: 75px;
+  background-color: #f47649;
+  z-index: -1;
+  border-radius: 45px 45px 45px 45px;
+}
+#text-Spc{
+  padding-left: 20px;
+  padding-top: 35px;
+  font-size: 20px;
+}
+.circle1 {
+  width: 100px;
+        height: 200px;
+        top: 76%;
+        right: 0px;
+        background-color: #f47649;
+        clip-path: ellipse(100% 50% at 100% 50%);
+}
+
+.circle2 {
+  width: 600px;
+  height: 300px;
+  top: 125%;
+  left: 0px;
+  background-color: #0c8cab;
+  clip-path: ellipse(25% 50% at 0% 50%); /* Ajusta el valor para obtener las esquinas redondeadas */
+}
+
+.circle3 {
+  width: 70px;
+  height: 70px;
+  top: 170%;
+  right: 85px;
+  background-color: #562055;
+  border-radius: 20%;
+}
+}

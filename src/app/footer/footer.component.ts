@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class FooterComponent implements OnInit {
 
   email: string = '';
-  private apiUrl = 'http://localhost:8080/enviar-correo';
+  private apiUrl = 'http://podemosser.com/enviar-correo';
 
   constructor(private http: HttpClient) { }
 
