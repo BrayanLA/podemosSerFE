@@ -6,14 +6,38 @@ footer {
 .half-bottom {
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
   position: absolute;
-  left: 22%;
-  transform: translate(-50%, -50%);
+  left: 25%;
+  transform: translate(-50%, -66%);
   z-index: 10;
+}
+p{
+  font-weight: 500;
+}
+#tabs{
+  display: flex;
+  justify-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 @media (max-width: 480px) {
   #text-img{
 
     font-size: 41px;
+  }
+
+  .half-bottom {
+    width: 74px !important;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
+    position: absolute;
+    left: 43%;
+    transform: translate(-12%, -121%);
+    z-index: 10;
+  }
+  #tabs{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
 
 }

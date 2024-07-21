@@ -20,7 +20,7 @@ export class FooterComponent implements OnInit {
     if (this.email) {
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
       const body = { email: this.email, date: new Date().toISOString() };
-      this.http.post(this.apiUrl, body, { headers: headers }).subscribe(
+      this.http.post('https://podemosser.com/enviar-correo', body, { headers: headers }).subscribe(
         response => {
           console.log('Subscription successful', response);
           // Aquí puedes manejar una respuesta exitosa, como mostrar un mensaje al usuario.

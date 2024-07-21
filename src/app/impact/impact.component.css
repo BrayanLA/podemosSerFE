@@ -153,7 +153,11 @@ p{
   left: 0;
   right: 0;
 }
-
+#icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 h2 {
   position: relative;
   color: white;
@@ -162,7 +166,7 @@ h2 {
   content: '';
   position: absolute;
   left: -16vw;
-  bottom: -34%;
+  bottom: -45%;
   width: 80%;
   height: 75px;
   background-color: #f47649;
@@ -173,7 +177,7 @@ h2 {
   content: '';
   position: absolute;
   left: -16vw;
-  bottom: -32.5%;
+  bottom: -43.9%;
   width: 72%;
   height: 6px;
   background-color: #ffffff;

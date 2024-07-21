@@ -21,7 +21,7 @@
   justify-content: center;
   font-family: 'LEMONMILK-Bold', sans-serif;
     font-size: 5rem; /* Tamaño de fuente más grande */
-    font-weight: 530; /* Grosor de la fuente */
+    font-weight: 550; /* Grosor de la fuente */
     text-shadow: 2px 2px 2px rgb(73,46,102); /* Efecto de relieve */
   letter-spacing: 1px;
 }
@@ -132,6 +132,9 @@ h3.descarga {
     hsl(248, 39%, 39%) 92%,
     hsl(248, 39%, 29%) 100%*/
   );
+}
+#card{
+  border: none;
 }
 
 .front {
@@ -244,7 +247,7 @@ h3.descarga {
   background-color: #4f2352;
 }
 #bodycard_purple{
-  background-color: #ff5733;
+  background-color: #0c8cab;
 }
 #readNow{
   color: white;
@@ -364,7 +367,7 @@ h3.descarga {
 }
 
   p {
-    font-size: 9px;
+    font-size: 1rem;
     text-align:left;
     letter-spacing: 1px;
   }

@@ -4,16 +4,15 @@
 #img-text {
   position: relative;
   background-image: url('../../assets/img/BG/08 Agosto_Ibagué.jpg');
-  object-fit:cover;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
   height: 376px;
 }
 .custom-container {
   display: flex;
-            flex-direction: row;
-            justify-content: flex-end; /* Alinea el contenido hacia abajo */
-            height: 100%; /* Centra el contenedor */
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 #img-text::before {
@@ -95,7 +94,11 @@ h2 {
   z-index: -1;
   border-radius: 0 50% 50% 0;
 }
-
+#icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .autNameT::before{
   content: '';
   position: absolute;
@@ -226,32 +229,41 @@ h2 {
 
 
 @media (max-width: 480px) {
-  #text-img{
-
-    font-size: 32px;
+  #img-text {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 176px;
   }
-
-  .grid-container {
-
-    display: grid;
-    grid-template-columns: repeat(2, 126px);
-    grid-template-rows: repeat(2, 126px);
-    gap: 8px;
+  #text-img{
+    font-size: 32px;
+    right: 2vh;
+  }
+  #main-text{
+    display: flex;
     flex-direction: column;
   }
 
-  .custom-paragraph {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    font-size: 8px;
+  .custom-paragraph {
+    font-size: 1rem;
     color: #4f2352;
   }
 
   .tittle-style::before {
-        content: '';
+    content: '';
     position: absolute;
     left: -12vw;
-    bottom: -212%;
-    width: 80%;
+    bottom: -21%;
+    width: 88%;
     height: 75px;
     background-color: #f47649;
     z-index: 0;
@@ -261,8 +273,8 @@ h2 {
     content: '';
     position: absolute;
     left: -16vw;
-    bottom: -205.5%;
-    width: 81%;
+    bottom: -18.9%;
+    width: 83%;
     height: 6px;
     background-color: #ffffff;
     z-index: 0;
@@ -285,9 +297,9 @@ h2 {
     content: '';
     position: absolute;
     left: -0.8vw;
-    bottom: 12%;
+    bottom: 7%;
     width: 104%;
-    height: 261px;
+    height: 276px;
     background-color: #0c8cab;
     z-index: -1;
     border-radius: 34px;
@@ -296,14 +308,13 @@ h2 {
   .autNameT::after{
     content: '';
     position: absolute;
-    left: 13.4vw;
-    bottom: 93.8%;
-    width: 30%;
-    height: 24%;
+    left: 58.4vw;
+    bottom: 97.8%;
+    width: 15%;
+    height: 15%;
     background-color: #f47649;
     z-index: -1;
     border-radius: 0 50% 50% 0;
-
   }
 
   h2 {
@@ -313,12 +324,12 @@ h2 {
   }
 
   .autNameA::before{
-       content: '';
+    content: '';
     position: absolute;
     left: -0.8vw;
     bottom: 5%;
     width: 104%;
-    height: 261px;
+    height: 321px;
     background-color: #f47649;
     z-index: -1;
     border-radius: 30px;
@@ -327,10 +338,10 @@ h2 {
   .autNameA::after{
     content: '';
     position: absolute;
-    left: 55.4vw;
-    bottom: 75.8%;
-    width: 16%;
-    height: 15%;
+    left: 58.4vw;
+    bottom: 96.8%;
+    width: 15%;
+    height: 13%;
     background-color: #0c8cab;
     z-index: -1;
     border-radius: 0 50% 50% 0;
@@ -341,11 +352,21 @@ h2 {
 
 
     .autText{
-      font-size: 12px !important;
+      font-size: 1rem !important;
     }
 
 }
 @media only screen and (min-width: 1200px ) and (max-width:1400px) {
+  .custom-paragraph{
+    font-size: 1.4rem;
+    color: #4f2352;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 225px);
+    grid-template-rows: repeat(2, 225px);
+    gap: 20px;
+  }
   .autNameh2{
     font-size: 24px !important;
   }
@@ -366,7 +387,7 @@ h2 {
     content: '';
     position: absolute;
     left: 13.4vw;
-    bottom: 94.8%;
+    bottom: 80.8%;
     width: 30%;
     height: 24%;
     background-color: #0c8cab;
@@ -376,8 +397,8 @@ h2 {
   .autNameT::after{
     content: '';
     position: absolute;
-    left: 13.4vw;
-    bottom: 85.8%;
+    left: 12.9vw;
+    bottom: 80.8%;
     width: 30%;
     height: 24%;
     background-color: #f47649;
@@ -389,8 +410,8 @@ h2 {
     position: absolute;
     left: -0.3vw;
     bottom: 2.3%;
-    width: 104%;
-    height: 308px;
+    width: 101%;
+    height: 259px;
     background-color: #f47649;
     z-index: -1;
     border-radius: 30px;
@@ -399,16 +420,20 @@ h2 {
   .autNameT::before{
     content: '';
     position: absolute;
-    left: -0.8vw;
+    left: -0.9vw;
     bottom: 5%;
-    width: 105%;
-    height: 294px;
+    width: 101%;
+    height: 251px;
     background-color: #0c8cab;
     z-index: -1;
     border-radius: 30px;
 
   }
-
+  #icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   #text-img{
     color: white;
     font-size: 90px;
@@ -426,7 +451,7 @@ h2 {
   content: '';
   position: absolute;
   left: -16vw;
-  bottom: -85%;
+  bottom: -75%;
   width: 80%;
   height: 75px;
   background-color: #f47649;
@@ -437,7 +462,7 @@ h2 {
   content: '';
   position: absolute;
   left: -16vw;
-  bottom: -82.5%;
+  bottom: -73.5%;
   width: 72%;
   height: 6px;
   background-color: #ffffff;
