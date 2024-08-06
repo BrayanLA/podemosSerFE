@@ -176,14 +176,22 @@ p{
   font-size: 26px;
 }
 @media (max-width: 480px) {
+  #img-text {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 176px;
+  }
+  #text-img{
+    font-size: 32px;
+    right: 2vh;
+  }
   .circle {
     display: none;
   }
-  .img-fluid{
-    width: 60px !important;
-  }
+
   .Tags{
-    width: 50px !important;
+    width: 11px !important;
   }
   .ilustration{
     width: 60px !important;
@@ -216,6 +224,74 @@ p{
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+  .tittle1::after{
+    content: '';
+    position: absolute;
+    left: -9vw;
+    bottom: -9.5%;
+    width: 100%;
+    height: 62px;
+    background-color: #0c8cab;
+    z-index: -1;
+    border-radius: 0px 45px 45px 0px;
+  }
+  .tittle1::before{
+    content: '';
+    position: absolute;
+    bottom: 1%;
+    width: 93%;
+    height: 4px;
+    background-color: #ffffff;
+    z-index: 10;
+    left: -9vw;
+  }
+  .tittle2::after{
+    content: '';
+    position: absolute;
+    left: -9vw;
+    bottom: -9.5%;
+    width: 114%;
+    height: 62px;
+    background-color: #562055;
+    z-index: -1;
+    border-radius: 0px 45px 45px 0px;
+  }
+  .tittle2::before{
+    content: '';
+    position: absolute;
+    bottom: 1%;
+    width: 106%;
+    height: 4px;
+    background-color: #ffffff;
+    z-index: 10;
+    left: -9vw;
+  }
+  .tittle3::after{
+    content: '';
+    position: absolute;
+    left: -9vw;
+    bottom: -5.5%;
+    width: 104%;
+    height: 51px;
+    background-color: #f47649;
+    z-index: -1;
+    border-radius: 0px 45px 45px 0px;
+  }
+  .tittle3::before{
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    width: 98%;
+    height: 4px;
+    background-color: #ffffff;
+    z-index: 10;
+    left: -9vw;
+  }
+  #text-Spc{
+    padding-top: 23px;
+    padding-left: 17px;
+    font-size: 26px;
+  }
 }
 
 @media only screen and (min-width: 1200px ) and (max-width:1400px) {
@@ -246,30 +322,44 @@ p{
     width: 98%;
 
   }
+  .ilustration{
+    width: 75px;
+    }
 
   .tittle3::after{
   content: '';
   position: absolute;
   left: -2vw;
-  bottom: -32.5%;
+  bottom: -7.5%;
   width: 98%;
-  height: 75px;
+  height: 62px;
   background-color: #f47649;
   z-index: -1;
   border-radius: 45px 45px 45px 45px;
 }
+.tittle3::before{
+  content: '';
+  position: absolute;
+  bottom: 12%;
+  height: 4px;
+  background-color: #ffffff;
+  z-index: 10;
+  left: -1vw;
+}
 #text-Spc{
-  padding-left: 20px;
-  padding-top: 35px;
+  padding-left: 13px;
+  padding-top: 3px;
+  padding-right: 58px;
   font-size: 20px;
+  text-align: center;
 }
 .circle1 {
   width: 100px;
-        height: 200px;
-        top: 76%;
-        right: 0px;
-        background-color: #f47649;
-        clip-path: ellipse(100% 50% at 100% 50%);
+  height: 200px;
+  top: 76%;
+  right: 0px;
+  background-color: #f47649;
+  clip-path: ellipse(100% 50% at 100% 50%);
 }
 
 .circle2 {
