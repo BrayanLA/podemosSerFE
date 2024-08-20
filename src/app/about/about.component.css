@@ -311,15 +311,7 @@ h2 {
   }
 
   .autNameT::after{
-    content: '';
-    position: absolute;
-    left: 58.4vw;
-    bottom: 102.8%;
-    width: 15%;
-    height: 13%;
-    background-color: #f47649;
-    z-index: -1;
-    border-radius: 0 50% 50% 0;
+    display: none;
   }
 
   h2 {
@@ -341,15 +333,7 @@ h2 {
   }
 
   .autNameA::after{
-    content: '';
-    position: absolute;
-    left: 58.4vw;
-    bottom: 102.8%;
-    width: 15%;
-    height: 13%;
-    background-color: #0c8cab;
-    z-index: -1;
-    border-radius: 0 50% 50% 0;
+    display: none;
   }
 
 
