@@ -64,6 +64,76 @@ p{
   font-size: 18px !important;
 }
 
+
+
+.styled-title {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem; /* Tamaño relativo para el título */
+  padding-left: 0;
+  z-index: 1;
+  color: white; /* Asegura que el texto comience en su posición natural */
+}
+
+.styled-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -100vw; /* Comienza desde la izquierda de la pantalla */
+  transform: translateY(-50%);
+  height: 4.5rem; /* Franja más gruesa */
+  background-color: #f47649;
+  width: calc(100vw + 7cm); /* La franja cubre todo el ancho de la pantalla y se extiende 1 cm más allá del texto */
+  z-index: -2;
+  border-top-right-radius: 2rem; /* Redondea el borde superior derecho */
+  border-bottom-right-radius: 2rem; /* Redondea el borde inferior derecho */
+}
+
+.styled-title::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 25px); /* Coloca la línea blanca 4px debajo del texto */
+  left: -100vw; /* Comienza desde el borde izquierdo de la pantalla */
+  transform: translateY(-50%);
+  height: 0.3rem; /* Altura de la línea blanca */
+  background-color: white;
+  width: calc(100vw + 6cm); /* La línea blanca cubre todo el ancho de la pantalla y se extiende 1 cm más allá del texto */
+  z-index: -2;
+}
+.styled-title2 {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem; /* Tamaño relativo para el título */
+  padding-left: 0;
+  z-index: 1;
+  color: white; /* Asegura que el texto comience en su posición natural */
+}
+
+.styled-title2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -100vw; /* Comienza desde la izquierda de la pantalla */
+  transform: translateY(-50%);
+  height: 4.5rem; /* Franja más gruesa */
+  background-color: #0c8cab;
+  width: calc(100vw + 7cm); /* La franja cubre todo el ancho de la pantalla y se extiende 1 cm más allá del texto */
+  z-index: -2;
+  border-top-right-radius: 2rem; /* Redondea el borde superior derecho */
+  border-bottom-right-radius: 2rem; /* Redondea el borde inferior derecho */
+}
+
+.styled-title2::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 25px); /* Coloca la línea blanca 4px debajo del texto */
+  left: -100vw; /* Comienza desde el borde izquierdo de la pantalla */
+  transform: translateY(-50%);
+  height: 0.4rem; /* Altura de la línea blanca */
+  background-color: white;
+  width: calc(100vw + 6cm); /* La línea blanca cubre todo el ancho de la pantalla y se extiende 1 cm más allá del texto */
+  z-index: -2;
+}
 .modal-overlay {
   position: absolute;
   top: 0;
