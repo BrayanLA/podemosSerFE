@@ -30,10 +30,16 @@
         <form (ngSubmit)="subscribe()">
           <h5>¡Manténte actualizado!</h5>
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email" [(ngModel)]="email" name="email">
-            <button class="btn btn-primary" type="button" (click)="subscribe()" style="background-color: #0C8CAB; border-color: #0C8CAB;">Subscribe</button>
+            <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
+
+            <div class="tooltip-container" [ngClass]="tooltipClass">
+              <span class="tooltip">{{ message }}</span>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electrónico" [(ngModel)]="email" name="email">
+            </div>
+
+            <button class="btn btn-primary text" type="button" (click)="subscribe()" style="background-color: #0C8CAB; border-color: #0C8CAB;">Suscribirse</button>
           </div>
+
         </form>
       </div>
     </div>

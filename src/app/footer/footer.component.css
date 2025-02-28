@@ -19,6 +19,88 @@ p{
   justify-content: flex-end;
   align-items: center;
 }
+button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #0C8CAB;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #0C8CAB;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #0C8CAB;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif; /* Aplica la fuente a toda la tooltip-container */
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  background: var(--tooltip-background); /* Utiliza la variable para el color de fondo */
+  border-radius: 5px;
+  width: 14em;
+  text-align: center;
+  visibility: hidden;
+  color: #fff; /* Color del texto para un buen contraste */
+  font-family: "IBM Plex Sans", sans-serif; /* Aplica la fuente a la tooltip */
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background: var(--tooltip-background); /* Sincroniza el color de la flecha con el fondo */
+}
+
+.tooltip-container.show-tooltip .tooltip {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  animation: shake 500ms ease-in-out forwards;
+}
+
+/* Estados personalizados para las alertas */
+.tooltip-container.success .tooltip {
+  --tooltip-background: #0C8CAB; /* Color para el éxito */
+}
+
+.tooltip-container.warning .tooltip {
+  --tooltip-background: #f47649; /* Color para el estado de advertencia */
+}
+
+.tooltip-container.error .tooltip {
+  --tooltip-background: #562055; /* Color para el error */
+}
+
 @media (max-width: 480px) {
   #text-img{
 

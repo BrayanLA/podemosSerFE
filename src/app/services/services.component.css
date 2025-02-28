@@ -34,12 +34,40 @@
   right: 300px;
   z-index: 1; /* Para asegurarse de que el texto esté encima del fondo azul */
 }
-
+#bodycard_orange {
+  background-color: #0c8cab;
+}
+.rounde-bottom {
+  border-bottom-left-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+}
 #backgroud-img {
   background-image: url('../../assets/img/BG/KONRAD_30mujeres_texturas4.png');
   background-size: cover;
   background-position: center;
   z-index: -10;
+}
+.arrow-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 30px;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: 8px;
+}
+#card {
+  border: none;
+}
+#readNow {
+  color: white;
+  font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.card-img-top.first-card {
+  height: 350px;
+  object-fit: cover;
 }
 h2 {
   position: relative;
@@ -66,7 +94,7 @@ p{
   position: absolute;
   left: -2vw;
   bottom: -16.5%;
-  width: 90%;
+  width: 88%;
   height: 62px;
   background-color: #0c8cab;
   z-index: -1;
@@ -87,7 +115,7 @@ p{
   position: absolute;
   left: -2vw;
   bottom: -16.5%;
-  width: 90%;
+  width: 88%;
   height: 62px;
   background-color: #562055;
   z-index: -1;
@@ -107,7 +135,7 @@ p{
   content: '';
   position: absolute;
   left: -2vw;
-  bottom: -14.5%;
+  bottom: 3.5%;
   width: 86%;
   height: 62px;
   background-color: #f47649;
@@ -120,9 +148,9 @@ p{
 .tittle3::before {
   content: '';
   position: absolute;
-  bottom: 1%;
+  bottom: 14%;
   width: 75%; /* Ancho de la página menos el relleno del h2 */
-  height: 4px;
+  height: 5px;
   background-color: #ffffff;
   z-index: 10;
   left: -1vw; /* Posición inicial desde el borde izquierdo de la página */
@@ -303,23 +331,23 @@ p{
     right: 35px;
   }
   .tittle1::before{
-    width: 92%;
+    width: 80%;
   }
   .tittle2::before{
-    width: 92%;
+    width: 80%;
   }
   .tittle3::before{
-    width: 92%;
+    width: 80%;
   }
   .tittle1::after{
 
-    width: 98%;
+    width: 89%;
 
   }
 
   .tittle2::after{
 
-    width: 98%;
+    width: 89%;
 
   }
   .ilustration{
@@ -331,7 +359,7 @@ p{
   position: absolute;
   left: -2vw;
   bottom: -7.5%;
-  width: 98%;
+  width: 89%;
   height: 62px;
   background-color: #f47649;
   z-index: -1;
