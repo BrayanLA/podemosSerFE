@@ -203,6 +203,8 @@ p{
   padding-left: 43px;
   font-size: 26px;
 }
+
+
 @media (max-width: 480px) {
   #img-text {
     position: relative;

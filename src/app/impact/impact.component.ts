@@ -120,20 +120,20 @@ export class ImpactComponent {
     "../../assets/2024-comprimidas/21 septiembre_Mujeres que inspiran_Testimonio Cindy Tatiana Angulo.jpg"
   ];
   imagenesOctubre2024: string[] = [
-    "../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare.JPG",
+    "../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare.jpg",
     "../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare (2).jpg",
     "../../assets/2024-comprimidas/24 octubre_Transferencia metodológica con la Gobernación del Atlántico.jpg",
     "../../assets/2024-comprimidas/24 octubre_Transferencia metodológica con la Gobernación del Atlántico (2).jpg",
     "../../assets/2024-comprimidas/25 octubre_programa de formación con la Gobernación del Atlántico.jpg",
-    "../../assets/2024-comprimidas/25 octubre_programa de formación con la Gobernación del Atlántico (2).JPG",
+    "../../assets/2024-comprimidas/25 octubre_programa de formación con la Gobernación del Atlántico (2).jpg",
   ];
   imagenesNoviembre2024: string[] = [
     "../../assets/2024-comprimidas/4 noviembre_60 años KAS Colombia.jpg",
-    "../../assets/2024-comprimidas/7 noviembre_programa de mentorías en Barranca de Upía.JPG",
+    "../../assets/2024-comprimidas/7 noviembre_programa de mentorías en Barranca de Upía.jpg",
     "../../assets/2024-comprimidas/8 noviembre_programa de mentorías en Buenaventura.jpg",
     "../../assets/2024-comprimidas/17 de noviembre_programa de mentorías con la Gobernación de Casanare.jpg",
     "../../assets/2024-comprimidas/17 de noviembre_programa de mentorías con la Gobernación de Casanare (2).jpg",
-    "../../assets/2024-comprimidas/17 de noviembre_programa de mentorías con la Gobernación de Casanare (3).JPG",
+    "../../assets/2024-comprimidas/17_de_noviembre_programa_de_mentorías_con_la_Gobernación_de_Casanare3.jpg",
     "../../assets/2024-comprimidas/25 noviembre_Día de la No Violencia contra la Mujer en Buga.jpeg",
   ];
   imagenesDiciembre2024: string[] = [
