@@ -92,9 +92,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-febrero2021" class="date">
-                <img class="date-image" src="../../assets/img/Carrousell/2021-comprimidas/01 Enero_Lanzamiento.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2021[0])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2021[0].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -112,10 +114,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-marzo2021" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2021-comprimidas/03 Marzo_Jóvenes Iberoamericanos.jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2021[1])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2021[1].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -139,10 +142,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-julio2021" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2021-comprimidas/07 Julio_Socialización Medellín.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2021[2])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2021[2].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -159,10 +163,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-agosto2021" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2021-comprimidas/08 Agosto_Ibagué (mesa técnica).jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2021[3])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2021[3].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -180,10 +185,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-septiembre2021" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2021-comprimidas/09 Septiembre_Manizales (2).jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2021[4])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2021[4].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -201,10 +207,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-octubre2021" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2021-comprimidas/10 Octubre Socialización Cali (2).jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2021[5])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2021[5].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -239,10 +246,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-marzo2022" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2022-comprimidas/03 Marzo_Socialización Bogotá (1).jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2022[0])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2022[0].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -261,10 +269,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-agosto2022" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2022-comprimidas/08 Agosto_Marea Púrpura (Bogotá).jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2022[1])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2022[1].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -283,9 +292,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-septiembre2022" class="date">
-                <img class="date-image" src="../../assets/img/Carrousell/2022-comprimidas/09 Septiembre_Lanzamiento.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2022[2])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2022[2].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -305,10 +316,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-noviembre2022" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Colegio Mayor San bartolomé (2).jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2022[3])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2022[3].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -338,9 +350,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-marzo2023" class="date">
-                <img class="date-image" src="../../assets/2023-comprimidas/2023.png"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[0])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[0].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -357,10 +371,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-abril2023" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2023-comprimidas/04 Abril_Marea Púrpura (Bucaramanga).jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[1])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[1].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -383,10 +398,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-junio2023" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2023-comprimidas/06 Junio_Mentorías Valle del Cauca.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[2])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[2].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -404,10 +420,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-julio2023" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2023-comprimidas/07 Julio_Entrevista doble radio G.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[3])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[3].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -424,10 +441,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-septiembre2023" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2023-comprimidas/09 Septiembre_Mesa técnica Villavicencio.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[4])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[4].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -445,10 +463,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-octubre2023" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2023-comprimidas/10 Octubre_Jornada juvenil Valledupar.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[5])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[5].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -465,9 +484,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-noviembre2023" class="date">
-                <img class="date-image" src="../../assets/img/Carrousell/2023-comprimidas/11 Noviembre_ELIGEP 2050.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[6])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[6].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -483,10 +504,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-diciembre2023" class="date">
-                <img class="date-image"
-                  src="../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2023[7])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2023[7].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -513,10 +535,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-marzo2024" class="date">
-                <img class="date-image"
-                  src="../../assets/2024-comprimidas/8 marzo_socialización Universidad de Medellín-min.jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[0])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[0].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -535,10 +558,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-abril2024" class="date">
-                <img class="date-image"
-                  src="../../assets/2024-comprimidas/29 abril_programa de mentorías (3)Buga-min.jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[1])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[1].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -561,9 +585,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-mayo2024" class="date">
-                <img class="date-image" src="../../assets/2024-comprimidas/22 mayo_socialización KAS PPI (2)-min.jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[2])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[2].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -586,9 +612,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-junio2024" class="date">
-                <img class="date-image" src="../../assets/2024-comprimidas/10 junio_socialización Soy Líder-min.jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[3])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[3].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -609,18 +637,22 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-julio2024" class="date">
-                <img class="date-image" src="../../assets/2024-comprimidas/30_julio_reunion_secretaria_mujer_equidad_genero_gobernacion_atlantico.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[4])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[4].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Julio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Reunión con la Secretaría de la Mujer y Equidad de Género de la Gobernación del Atlántico
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Reunión con la
+              Secretaría de la Mujer y Equidad de Género de la Gobernación del Atlántico
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Reunión con la Secretaría de la Mujer y Equidad de Género de la Alcaldía de Barranquilla
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Reunión con la
+              Secretaría de la Mujer y Equidad de Género de la Alcaldía de Barranquilla
               Universidad de Medellín
             </p>
           </div>
@@ -629,16 +661,19 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-septiembre2024" class="date">
-                <img class="date-image" src="../../assets/2024-comprimidas/21 septiembre_Mujeres que inspiran_Testimonio Cindy Tatiana Angulo.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[5])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[5].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Septiembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Mujeres que inspiran: Testimonio Cindy Tatiana Angulo
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Mujeres que
+              inspiran: Testimonio Cindy Tatiana Angulo
             </p>
           </div>
         </div>
@@ -646,20 +681,25 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-octubre2024" class="date">
-                <img class="date-image" src="../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare.JPG"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[6])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[6].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Octubre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Mesa técnica por la
+              promoción del liderazgo y la autonomía económica de las mujeres en Casanare
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Transferencia metodológica en Barranquilla
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Transferencia
+              metodológica en Barranquilla
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;programa de mentorías en Sabanalarga
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;programa de
+              mentorías en Sabanalarga
             </p>
           </div>
         </div>
@@ -667,9 +707,11 @@
           <div class="icon"></div>
           <div class="date-content">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-noviembre2024" class="date">
-                <img class="date-image" src="../../assets/2024-comprimidas/4 noviembre_60 años KAS Colombia.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[7])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[7].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -683,7 +725,7 @@
               <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
               &nbsp;Programa de mentorías en Buenaventura <br>
               <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
-              &nbsp;Programa de mentorías en Yopal  <br>
+              &nbsp;Programa de mentorías en Yopal <br>
               <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
               &nbsp;Día de la No Violencia contra la Mujer en Buga
             </p>
@@ -693,16 +735,19 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-diciembre2024" class="date">
-                <img class="date-image" src="../../assets/2024-comprimidas/2 diciembre_Podemos ser por Venezuela.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2024[8])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2024[8].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Diciembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Podemos ser por Venezuela
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Podemos ser por
+              Venezuela
             </p>
           </div>
         </div>
@@ -719,21 +764,23 @@
       <div class="main-timeline">
         <!-- start experience section-->
 
-        <div class="timeline  timeline-org">
+        <div class="timeline timeline-org">
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-febrero2025" class="date">
-                <img class="date-image"
-                  src="../../assets/2025-comprimidas/25 febrero_Cumbre de Mandatarias por la Igualdad.jpeg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <!-- data-bs-target era un modal específico -->
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2025[0])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2025[0].images" style="width: 23%; object-fit:cover;" alt="..." />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Febrero</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Cumbre de Mandatarias por la Igualdad
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Cumbre de
+              Mandatarias por la Igualdad
             </p>
           </div>
         </div>
@@ -741,10 +788,11 @@
           <div class="icon"></div>
           <div class="date-content text-center">
             <div class="date-outer">
-              <label data-bs-toggle="modal" data-bs-target="#modal-marzo2025" class="date">
-                <img class="date-image"
-                  src="../../assets/2025-comprimidas/7 marzo_Conmemoración 8M en Galapa.jpg"
-                  style="width: 23%; object-fit:cover;" alt="...">
+              <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
+                (click)="openModal(eventos2025[1])">
+                <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
+                <img class="date-image" [src]="eventos2025[1].images[0]" style="width: 23%; object-fit:cover;"
+                  alt="..." />
               </label>
             </div>
           </div>
@@ -753,1078 +801,49 @@
             <p class="description text-center">
               <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Socialización
               Universidad de Medellín <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Desayuno de Poderosas  <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Conmemoración 8M en Galapa <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Conmemoración 8M en Tarso <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;VII Festival Literario de Mujeres <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Podemos Ser en Mastercard
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Desayuno de
+              Poderosas <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Conmemoración 8M en
+              Galapa <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Conmemoración 8M en
+              Tarso <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;VII Festival
+              Literario de Mujeres <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Podemos Ser en
+              Mastercard
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--MODALS-->
+</div>
 
-  <!--- FEBRERO 2021 --->
-  <div class="modal fade" id="modal-febrero2021" tabindex="-1" aria-labelledby="modal-febrero2021-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-febrero2021" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2021-comprimidas/01 Enero_Lanzamiento.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-febrero2021"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-febrero2021"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
+
+<div class="modal fade" id="eventoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" *ngIf="selectedEvent">
+      <div class="modal-header">
+        <h5 class="modal-title" [style.color]="selectedTitleColor">
+          {{ selectedEvent.title }}
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
-    </div>
-    <div class="modal fade" id="modal-marzo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- MARZO 2021 --->
-  <div class="modal fade" id="modal-marzo2021" tabindex="-1" aria-labelledby="modal-marzo2021-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-marzo2021" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesMarzo2021; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
+      <div class="modal-body">
+        <div id="carouselEvento" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div *ngFor="let img of selectedEvent.images; let i = index"
+              [ngClass]="{'carousel-item': true, 'active': i === 0}">
+              <img [src]="img" class="d-block w-100" />
             </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-marzo2021"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-marzo2021"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- JULIO 2021 --->
-  <div class="modal fade" id="modal-julio2021" tabindex="-1" aria-labelledby="modal-julio2021-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-julio2021" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2021-comprimidas/07 Julio_Socialización Medellín.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-julio2021"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-julio2021"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- AGOSTO 2021 --->
-  <div class="modal fade" id="modal-agosto2021" tabindex="-1" aria-labelledby="modal-agosto2021-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-agosto2021" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2021-comprimidas/08 Agosto_Ibagué (mesa técnica).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/08 Agosto_Ibagué.jpg" class="d-block mx-auto img-fluid"
-                  alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/08 Agosto_Ibagué(3).jpg" class="d-block mx-auto img-fluid"
-                  alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-agosto2021"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-agosto2021"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- SEPTIEMBRE 2021 --->
-  <div class="modal fade" id="modal-septiembre2021" tabindex="-1" aria-labelledby="modal-septiembre2021-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-septiembre2021" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2021-comprimidas/09 Septiembre_Manizales (2).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/09 Septiembre_Manizales.jpg" class="d-block mx-auto img-fluid"
-                  alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/09 Septiembre_Manizales (3).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/09 Septiembre_Manizales (4).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-septiembre2021"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-septiembre2021"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- OCTUBRE 2021 --->
-  <div class="modal fade" id="modal-octubre2021" tabindex="-1" aria-labelledby="modal-octubre2021-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-octubre2021" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2021-comprimidas/10 Octubre Socialización Cali (2).jpeg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/10 Octubre_En Femenino.jpg" class="d-block mx-auto img-fluid"
-                  alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/10 Octubre_Socialización Cali (2).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/10 Octubre_Socialización Cali - Biblioteca.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2021-comprimidas/10 Octubre_Socialización Cali.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-octubre2021"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-octubre2021"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- MARZO 2022 --->
-  <div class="modal fade" id="modal-marzo2022" tabindex="-1" aria-labelledby="modal-marzo2022-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-marzo2022" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2022-comprimidas/03 Marzo_Socialización Bogotá (1).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2022-comprimidas/03 Marzo_Socialización Bogotá (2).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item">
-                <img src="../../assets/2022-comprimidas/03 Marzo_Socialización Bogotá.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-marzo2022"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-marzo2022"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- AGOSTO 2022 --->
-  <div class="modal fade" id="modal-agosto2022" tabindex="-1" aria-labelledby="modal-agosto2022-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-agosto2022" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesAgosto2022; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-agosto2022"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-agosto2022"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- SEPTIEMBRE 2022 --->
-  <div class="modal fade" id="modal-septiembre2022" tabindex="-1" aria-labelledby="modal-septiembre2022-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-septiembre2022" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2022-comprimidas/09 Septiembre_Lanzamiento.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-septiembre2022"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-septiembre2022"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- NOVIEMBRE 2022 --->
-  <div class="modal fade" id="modal-noviembre2022" tabindex="-1" aria-labelledby="modal-noviembre2022-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-noviembre2022" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesNoviembre2022; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-noviembre2022"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-noviembre2022"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- MARZO 2023 --->
-  <div class="modal fade" id="modal-marzo2023" tabindex="-1" aria-labelledby="modal-marzo2023-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-marzo2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/2023-comprimidas/2023.png" class="d-block mx-auto img-fluid"
-                  alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-marzo2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-marzo2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- ABRIL 2023 --->
-  <div class="modal fade" id="modal-abril2023" tabindex="-1" aria-labelledby="modal-abril2023-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-abril2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of abril2023; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-abril2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-abril2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- JUNIO 2023 --->
-  <div class="modal fade" id="modal-junio2023" tabindex="-1" aria-labelledby="modal-junio2023-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-junio2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2023-comprimidas/06 Junio_Mentorías Valle del Cauca.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2023-comprimidas/06 Junio_Mentorías Valle del Cauca (2).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-junio2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-junio2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- JULIO 2023 --->
-  <div class="modal fade" id="modal-julio2023" tabindex="-1" aria-labelledby="modal-julio2023-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-julio2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2023-comprimidas/07 Julio_Entrevista doble radio G.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-julio2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-julio2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--- SEPTIEMBRE 2023 --->
-  <div class="modal fade" id="modal-septiembre2023" tabindex="-1" aria-labelledby="modal-septiembre2023-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-septiembre2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of septiembre2023; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-septiembre2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-septiembre2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- OCTUBRE 2023 --->
-  <div class="modal fade" id="modal-octubre2023" tabindex="-1" aria-labelledby="modal-octubre2023-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-octubre2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2023-comprimidas/10 Octubre_Jornada juvenil Valledupar.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-octubre2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-octubre2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- NOVIEMBRE 2023 --->
-  <div class="modal fade" id="modal-noviembre2023" tabindex="-1" aria-labelledby="modal-noviembre2023-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-noviembre2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2023-comprimidas/11 Noviembre_ELIGEP 2050.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-noviembre2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-noviembre2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- DICIEMBRE 2023 --->
-  <div class="modal fade" id="modal-diciembre2023" tabindex="-1" aria-labelledby="modal-diciembre2023-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-diciembre2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa.jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa (1).jpg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-diciembre2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-diciembre2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- MARZO 2024 --->
-  <div class="modal fade" id="modal-marzo2024" tabindex="-1" aria-labelledby="modal-marzo2024-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-marzo2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of marzo2024; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-marzo2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-marzo2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- ABRIL 2024 --->
-  <div class="modal fade" id="modal-abril2024" tabindex="-1" aria-labelledby="modal-abril2024-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-abril2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2024-comprimidas/29 abril_programa de mentorías (2) Buga-min.jpeg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2024-comprimidas/29 abril_programa de mentorías (3)Buga-min.jpeg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-abril2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-abril2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- MAYO 2024 --->
-  <div class="modal fade" id="modal-mayo2024" tabindex="-1" aria-labelledby="modal-mayo2024-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-mayo2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesJunio2024; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mayo2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-mayo2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--- JUNIO 2024 --->
-  <div class="modal fade" id="modal-junio2024" tabindex="-1" aria-labelledby="modal-junio2024-label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-junio2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2024-comprimidas/10 junio_socialización Soy Líder-min.jpeg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item active">
-                <img src="../../assets/img/Carrousell/2024-comprimidas/10 junio_socialización Soy Líder(2)-min.jpeg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-              <div class="carousel-item active">
-                <img
-                  src="../../assets/img/Carrousell/2024-comprimidas/13 junio_ socialización obra de teatro Amarte Así (2)-min.jpeg"
-                  class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-junio2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-junio2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal-julio2024" tabindex="-1" aria-labelledby="modal-julio2024-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-julio2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesJulio2024; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-julio2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-julio2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal-septiembre2024" tabindex="-1" aria-labelledby="modal-septiembre2023-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-septiembre2023" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesSeptiembre2024; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-septiembre2023"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-septiembre2023"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal-octubre2024" tabindex="-1" aria-labelledby="modal-octubre2024-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-octubre2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesOctubre2024; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-octubre2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-octubre2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal-noviembre2024" tabindex="-1" aria-labelledby="modal-noviembre2024-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-noviembre2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesNoviembre2024; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-noviembre2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-noviembre2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal-diciembre2024" tabindex="-1" aria-labelledby="modal-diciembre2024-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-diciembre2024" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesDiciembre2024; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-diciembre2024"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-diciembre2024"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal-febrero2025" tabindex="-1" aria-labelledby="modal-febrero2025-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-febrero2025" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesFebrero2025; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-febrero2025"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-febrero2025"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal-marzo2025" tabindex="-1" aria-labelledby="modal-marzo2025-label"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Carrusel de imágenes aquí -->
-          <div id="carousel-marzo2025" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div *ngFor="let img of imagenesMarzo2025; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-                <img [src]="img" class="d-block mx-auto img-fluid" alt="None">
-              </div>
-            </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-marzo2025"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-marzo2025"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <!-- Fin del carrusel -->
+          <!-- Controles de carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
     </div>
