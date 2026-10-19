@@ -1,13 +1,14 @@
-<div class="container-fluid position-relative" id="img-text"></div>
+<div class="container-fluid position-relative home-hero"></div>
 
-<div class="container-fluid position-relative" class="img-fluid" id="backgroud-img">
+<!-- Ojo: este contenedor no es position-relative (igual que en producción); las formas .circle se ubican respecto al documento -->
+<div class="bg-texture">
   <div class="circle circle1"></div>
   <div class="circle2"></div>
   <div class="circle circle3"></div>
   <div class="container pb-5">
     <div class="row">
       <div class="col">
-        <h1 class="text-center" id="text-img">
+        <h1 class="text-center home-title">
           SORORIDAD COMO <br />
           APUESTA POLÍTICA
         </h1>
@@ -15,7 +16,7 @@
     </div>
     <div class="row">
       <div class="col-4 d-none d-md-flex justify-content-end">
-        <img src="../../assets/img/Generales/Png podemos ser 2.png" class="responsive-img" />
+        <img src="../../assets/img/Generales/Png podemos ser 2.png" class="responsive-img" alt="Integrantes de Podemos Ser" decoding="async" /><!-- sin width/height: en desktop se estira con la columna (flex) -->
       </div>
       <div class="col-12 col-md-7">
         <p>
@@ -48,24 +49,43 @@
     <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr6.jpg')"></div>
     <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr7.jpg')"></div>
   </div>
+  <div class="container py-5 text-center d-flex justify-content-center align-items-center">
+    <a href="https://www.kas.de/documents/d/kolumbien/abece-podemos-ser-1-" target="_blank" rel="noopener">
+      <div class="tooltip-img-container"
+           (mousemove)="onMouseMove($event)"
+           (mouseleave)="hideTooltip()">
+        <img src="../../assets/img/ORGANIZAN.png"
+             class="img-fluid"
+             alt="Organizan"
+             width="1595" height="1080" loading="lazy" decoding="async">
+      </div>
+    </a>
+  </div>
+
+  <!-- Tooltip flotante -->
+  <div *ngIf="tooltipVisible"
+       class="tooltip-follow"
+       [style.left.px]="tooltipX + 10"
+       [style.top.px]="tooltipY + 10">
+    Haz clic para ver más
+  </div>
 
   <div class="container py-5 text-center d-flex justify-content-center align-items-center">
-    <img src="../../assets/img/Generales/ps_icon3.png" id="Btn-deco" alt="">
+    <img src="../../assets/img/Generales/ps_icon3.png" class="download-heading__icon" alt="" width="668" height="664" loading="lazy" decoding="async">
     <h3 class="descarga px-2">DESCARGA NUESTRO CONTENIDO</h3> <img src="../../assets/img/Generales/ps_icon2.png"
-      id="Btn-deco" alt="">
+      class="download-heading__icon" alt="" width="670" height="660" loading="lazy" decoding="async">
   </div>
 
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mx-5" id="cards">
-        <div class="text-center card h-100" id="card">
-          <img class="card-img-top first-card" src="../../assets/img/Generales/libro.png" alt="Card image cap" />
-          <div class="card-body d-flex flex-row align-items-center justify-content-center rounde-bottom"
-            id="bodycard_purple">
-            <span id="readNow">¡LEER AHORA!</span>
-            <span class="arrow-container">
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mx-5">
+        <div class="text-center card h-100 download-card">
+          <img class="card-img-top download-card__img" src="../../assets/img/Generales/libro.png" alt="Libro Podemos Ser" width="720" height="880" loading="lazy" decoding="async" />
+          <div class="card-body d-flex flex-row align-items-center justify-content-center download-card__body download-card__body--blue">
+            <span class="download-card__label">¡LEER AHORA!</span>
+            <span class="download-card__arrow">
               <a href="https://www.kas.de/documents/287914/0/KONRAD_30mujeres_web.pdf/226bd703-ad0c-454c-57e8-225cf4489c96?t=1613579727000"
-                target="_blank">
+                target="_blank" rel="noopener" aria-label="Leer libro Podemos Ser">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f47649" class="bi bi-arrow-right"
                   viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
@@ -77,15 +97,14 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mx-5" id="cards">
-        <div class="text-center card h-100" id="card">
-          <img class="card-img-top first-card" src="../../assets/img/Generales/cartilla.png" alt="Card image cap" />
-          <div class="card-body d-flex flex-row align-items-center justify-content-center rounde-bottom"
-            id="bodycard_orange">
-            <span id="readNow">¡LEER AHORA!</span>
-            <span class="arrow-container">
-              <a href="https://www.kas.de/documents/287914/0/Cartilla+por+pagina_KONRAD_30+mujeres_Puede+ser+por+Colombia_Caja+de+herramientas.pdf/89233cee-167d-4e4e-37bc-6411f9b8a015?t=1678124739139  "
-                target="_blank">
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mx-5">
+        <div class="text-center card h-100 download-card">
+          <img class="card-img-top download-card__img" src="../../assets/img/Generales/cartilla.png" alt="Cartilla Puedo Ser por Colombia" width="784" height="880" loading="lazy" decoding="async" />
+          <div class="card-body d-flex flex-row align-items-center justify-content-center download-card__body download-card__body--purple">
+            <span class="download-card__label">¡LEER AHORA!</span>
+            <span class="download-card__arrow">
+              <a href="https://www.kas.de/documents/287914/0/Cartilla+por+pagina_KONRAD_30+mujeres_Puede+ser+por+Colombia_Caja+de+herramientas.pdf/89233cee-167d-4e4e-37bc-6411f9b8a015?t=1678124739139"
+                target="_blank" rel="noopener" aria-label="Leer cartilla">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-arrow-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"

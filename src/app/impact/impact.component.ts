@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-impact',
   templateUrl: './impact.component.html',
-  styleUrls: ['./impact.component.css']
+  styleUrls: ['./impact.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImpactComponent {
 

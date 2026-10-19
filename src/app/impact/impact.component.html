@@ -1,24 +1,24 @@
-<div class="container-fluid position-relative" class="img-fluid" id="img-text">
+<div class="page-hero impact-hero">
   <div class="container">
-    <h1 id="text-img">NUESTRO IMPACTO</h1>
+    <h1 class="page-hero__title">NUESTRO IMPACTO</h1>
   </div>
 </div>
-<div class="container-fluid" id="backgroud-img">
+<div class="container-fluid bg-texture">
 
   <div class="container text-center py-5">
-    <h2 class="styled-title2">Cifras</h2>
+    <h2 class="styled-title styled-title--blue">Cifras</h2>
   </div>
   <div class="container">
     <div class="container pb-5">
-      <div class="row" id="Ilustrations">
+      <div class="row impact-figures">
         <div class="col-12 col-md-7">
-          <div class="d-flex justify-content-end" id="map-container">
-            <img src="../../assets/img/ImpactMap.png" class="map-ilustration" alt="" width="550px">
+          <div class="d-flex justify-content-end map-container">
+            <img src="../../assets/img/ImpactMap.png" class="map-ilustration" alt="Mapa de Colombia con los departamentos alcanzados" width="550" height="617" decoding="async">
           </div>
         </div>
-        <div class="col-5" id="icons">
+        <div class="col-5 impact-stats">
           <div class="row justify-content-center">
-            <div class="col-lg-4 mb-4" id="counters">
+            <div class="col-lg-4 mb-4 impact-counter">
               <div class="col text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
                   class="bi bi-calendar-event  icon-blue" viewBox="0 0 16 16">
@@ -30,14 +30,14 @@
                 <p class="lContador">Eventos</p>
               </div>
             </div>
-            <div class="col-lg-4 mb-4 d-flex flex-column-reverse" id="counters">
+            <div class="col-lg-4 mb-4 d-flex flex-column-reverse impact-counter">
               <div class="col text-center">
-                <img src="../../assets/img/Generales/colombia.png" alt="" width="60" height="60">
+                <img src="../../assets/img/Generales/colombia.png" alt="" width="60" height="60" decoding="async">
                 <h5 appNumberAnimation [start]="0" [end]="16" [duration]="2000" class="pt-2"></h5>
                 <p class="lContador">Departamentos</p>
               </div>
             </div>
-            <div class="col-lg-4 mb-4" id="counters">
+            <div class="col-lg-4 mb-4 impact-counter">
               <div class="col text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
                   class="bi bi-book icon-blue" viewBox="0 0 16 16">
@@ -48,7 +48,7 @@
                 <p class="lContador">Ejemplares del libro</p>
               </div>
             </div>
-            <div class="col-lg-4 mb-4 d-flex flex-column-reverse" id="counters">
+            <div class="col-lg-4 mb-4 d-flex flex-column-reverse impact-counter">
               <div class="col text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
                   class="bi bi-archive icon-blue" viewBox="0 0 16 16">
@@ -59,7 +59,7 @@
                 <p class="lContador">Ejemplares de la caja de herramientas</p>
               </div>
             </div>
-            <div class="col-lg-4 mb-4" id="counters">
+            <div class="col-lg-4 mb-4 impact-counter">
               <div class="col text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
                   class="bi bi-person-video3 icon-blue" viewBox="0 0 16 16">
@@ -79,7 +79,7 @@
   </div>
 
   <div class="container text-center py-5">
-    <h2 class="styled-title">Impacto</h2>
+    <h2 class="styled-title styled-title--thin">Impacto</h2>
   </div>
 
   <div class="container">
@@ -95,15 +95,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[0].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2021[0].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Febrero</h2>
             <p class="description text-center timeline-content-justified">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               Lanzamiento dellibro <br>
               “Podemos Ser: Mujeres jóvenes influyentes <br>
               en la política colombiana”
@@ -117,21 +117,21 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[1].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2021[1].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Marzo</h2>
             <p class="description text-center justify-content-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp; Socialización Universidad<br>
               del Sinú - Montería <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp; Webinar “Jóvenes<br>
               Iberoamericanos” <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;III Foro Internacional de <br>
               la Mujer - Vicepresidencia <br>
             </p>
@@ -145,15 +145,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[2].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2021[2].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Julio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Medellín.
             </p>
           </div>
@@ -166,15 +166,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[3].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2021[3].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Agosto</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización <br>
               + mesa técnica Ibagué
             </p>
@@ -188,15 +188,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[4])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[4].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2021[4].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content timeline-content-justified">
             <h2 class="title text-center ">Septiembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización + mesa <br>
               técnica Manizales
             </p>
@@ -210,18 +210,18 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[5])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[5].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2021[5].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur ">Octubre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Entrega libro - En <br>
               Femenino <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Cali <br>
               + Biblioteca
             </p>
@@ -249,15 +249,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[0].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2022[0].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Marzo</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Bogotá
             </p>
           </div>
@@ -272,15 +272,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[1].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2022[1].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Agosto</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Marea Púrpura
             </p>
           </div>
@@ -295,15 +295,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[2].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2022[2].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Septiembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Lanzamiento “Caja <br>
               de herramientas”
             </p>
@@ -319,18 +319,18 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[3].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2022[3].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Noviembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Bogotá - <br>
               Colegio Mayor San Bartolomé <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Premio Dejar Huella
             </p>
           </div>
@@ -353,15 +353,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[0].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[0].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Marzo</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Lanzamiento NewsLetter
             </p>
           </div>
@@ -374,20 +374,20 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[1].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[1].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Abril</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Marea Púrpura
               <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Acción Interna <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización en Ruta País UR <br>
               + Mesa técnica Mocoa
             </p>
@@ -401,15 +401,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[2].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[2].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Junio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Programa de <br>
               mentorías Valle del Cauca
             </p>
@@ -423,15 +423,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[3].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[3].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Julio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Entrevista “Doble Radio G”
             </p>
           </div>
@@ -444,15 +444,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[4])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[4].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[4].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Septiembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización + <br>
               mesa técnica Villavicencio
             </p>
@@ -466,15 +466,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[5])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[5].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[5].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Octubre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Jornada juvenil Valledupar
             </p>
           </div>
@@ -487,15 +487,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[6])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[6].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[6].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center ">Noviembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;ELIGEP 2050
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;ELIGEP 2050
             </p>
           </div>
         </div>
@@ -507,15 +507,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[7])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[7].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2023[7].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Diciembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">&nbsp;Vista Hermosa
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Vista Hermosa
             </p>
           </div>
         </div>
@@ -538,15 +538,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[0].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[0].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Marzo</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Socialización
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
               Universidad de Medellín
             </p>
           </div>
@@ -561,18 +561,18 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[1].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[1].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Abril</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">&nbsp;Programa de
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de
               mentorías Cúcuta
               <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12">&nbsp;Programa de
+              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de
               mentorías Buga
 
             </p>
@@ -588,18 +588,18 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[2].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[2].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Mayo</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Socialización
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
               KAS PPI
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Socialización
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
               Universidad de Medellín
             </p>
           </div>
@@ -615,18 +615,18 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[3].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[3].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Junio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Socialización
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
               Soy Líder
               <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización obra de <br>
               teatro Amarte Así
             </p>
@@ -640,20 +640,17 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[4])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[4].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[4].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Julio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Reunión con la
-              Secretaría de la Mujer y Equidad de Género de la Gobernación del Atlántico
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Reunión con la Gobernación del Atlántico
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Reunión con la
-              Secretaría de la Mujer y Equidad de Género de la Alcaldía de Barranquilla
-              Universidad de Medellín
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Reunión con la Alcaldía de Barranquilla
             </p>
           </div>
         </div>
@@ -664,16 +661,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[5])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[5].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[5].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Septiembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Mujeres que
-              inspiran: Testimonio Cindy Tatiana Angulo
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Mujeres inspiradoras: Cindy  Angulo
             </p>
           </div>
         </div>
@@ -684,22 +680,19 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[6])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[6].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[6].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Octubre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Mesa técnica por la
-              promoción del liderazgo y la autonomía económica de las mujeres en Casanare
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Mesa técnica en Yopal
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Transferencia
-              metodológica en Barranquilla
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Transferencia en Barranquilla
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;programa de
-              mentorías en Sabanalarga
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de mentorías Sabanalarga
             </p>
           </div>
         </div>
@@ -710,24 +703,24 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[7])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[7].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[7].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Noviembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;60 años KAS Colombia
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;60 años KAS Colombia
               <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
-              &nbsp;Programa de mentorías en Barranca de Upía <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
-              &nbsp;Programa de mentorías en Buenaventura <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
-              &nbsp;Programa de mentorías en Yopal <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">
-              &nbsp;Día de la No Violencia contra la Mujer en Buga
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              &nbsp;Programa de mentorías Barranca de Upía <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              &nbsp;Programa de mentorías Buenaventura <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              &nbsp;Programa de mentorías Yopal <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              &nbsp;25N en Candelaria
             </p>
           </div>
         </div>
@@ -738,15 +731,15 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[8])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[8].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2024[8].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Diciembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12">&nbsp;Podemos ser por
+              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Podemos ser por
               Venezuela
             </p>
           </div>
@@ -770,15 +763,16 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2025[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2025[0].images" style="width: 23%; object-fit:cover;" alt="..." />
+                <img class="date-image" [src]="eventos2025[0].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Febrero</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Cumbre de
-              Mandatarias por la Igualdad
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Cumbre de
+              Mandatarias <br> por la Igualdad
             </p>
           </div>
         </div>
@@ -789,26 +783,23 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2025[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2025[1].images[0]" style="width: 23%; object-fit:cover;"
-                  alt="..." />
+                <img class="date-image" [src]="eventos2025[1].images[0]"
+                  alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
           </div>
           <div class="timeline-content">
             <h2 class="title text-center">Marzo</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Socialización
-              Universidad de Medellín <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Desayuno de
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
+              U. de Medellín <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Desayuno de
               Poderosas <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Conmemoración 8M en
-              Galapa <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Conmemoración 8M en
-              Tarso <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;VII Festival
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;8M en Galapa <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;8M en Tarso <br>
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;VII Festival
               Literario de Mujeres <br>
-              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12">&nbsp;Podemos Ser en
-              Mastercard
+              <img src="../../assets/img/Generales/tm_icon.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;8M en Mastercard
             </p>
           </div>
         </div>

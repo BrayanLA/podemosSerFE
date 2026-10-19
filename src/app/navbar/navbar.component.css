@@ -1,33 +1,27 @@
 nav {
-  background-color: #fffcff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--ps-surface);
+  box-shadow: var(--ps-shadow-bar);
 }
 
-
-.nav-link{
+.nav-link {
   margin-right: 20px;
-  color: #0c8cab;
-  transition: transform 0.3s ease; /* Agrega una transición suave */
+  color: var(--ps-blue);
+  transition: transform 0.3s ease;
   font-weight: bold;
 }
 
 .nav-link:hover {
-  transform: scale(1.1); /* Agrandar el tamaño del enlace en un 10% */
-  color:  #f47649;
-}
-/*Media query para celulares*/
-@media (max-width: 480px) {
-  #KasLogo{
-    display: none;
-  }
-  #PdsLogo{
-    height: 50px;
-  }
+  transform: scale(1.1);
+  color: var(--ps-orange);
 }
 
-/*Media query para tabletas*/
-@media (min-width: 481px) and (max-width: 768px) {
-  body {
-      font-size: 18px;
+/* Celulares */
+@media (max-width: 480px) {
+  .navbar-logo--partner {
+    display: none;
+  }
+
+  .navbar-logo--brand {
+    height: 50px;
   }
 }

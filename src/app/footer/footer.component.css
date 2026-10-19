@@ -1,55 +1,61 @@
 footer {
-  background-color: #fffcff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #562055;
+  background-color: var(--ps-surface);
+  box-shadow: var(--ps-shadow-bar);
+  color: var(--ps-plum);
 }
-.half-bottom {
+
+.footer-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-logo {
+  height: auto; /* conserva la proporción cuando cambia el ancho */
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
   position: absolute;
   left: 25%;
   transform: translate(-50%, -66%);
   z-index: 10;
 }
-p{
-  font-weight: 500;
+
+.social-icon--plum {
+  color: var(--ps-plum);
 }
-#tabs{
-  display: flex;
-  justify-items: center;
-  justify-content: flex-end;
-  align-items: center;
+
+.social-icon--blue {
+  color: var(--ps-blue);
 }
+
+/* Botón de suscripción */
 button {
   padding: 12.5px 30px;
   border: 0;
   border-radius: 100px;
-  background-color: #0C8CAB;
-  color: #ffffff;
-  font-weight: Bold;
+  background-color: var(--ps-blue);
+  color: var(--ps-white);
+  font-weight: bold;
   transition: all 0.5s;
-  -webkit-transition: all 0.5s;
 }
 
 button:hover {
-  background-color: #0C8CAB;
   box-shadow: 0 0 20px #6fc5ff50;
   transform: scale(1.1);
 }
 
 button:active {
-  background-color: #0C8CAB;
   transition: all 0.25s;
-  -webkit-transition: all 0.25s;
   box-shadow: none;
   transform: scale(0.98);
 }
 
-
+/* Tooltip de respuesta de la suscripción.
+   El estado (success / warning / error) se asigna desde el componente. */
 .tooltip-container {
   position: relative;
   display: flex;
   align-items: center;
-  font-family: "IBM Plex Sans", sans-serif; /* Aplica la fuente a toda la tooltip-container */
+  font-family: var(--ps-font-body);
 }
 
 .tooltip {
@@ -61,13 +67,13 @@ button:active {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
-  background: var(--tooltip-background); /* Utiliza la variable para el color de fondo */
+  background: var(--tooltip-background);
   border-radius: 5px;
   width: 14em;
   text-align: center;
   visibility: hidden;
-  color: #fff; /* Color del texto para un buen contraste */
-  font-family: "IBM Plex Sans", sans-serif; /* Aplica la fuente a la tooltip */
+  color: var(--ps-white);
+  font-family: var(--ps-font-body);
 }
 
 .tooltip::before {
@@ -78,7 +84,7 @@ button:active {
   top: 100%;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
-  background: var(--tooltip-background); /* Sincroniza el color de la flecha con el fondo */
+  background: var(--tooltip-background);
 }
 
 .tooltip-container.show-tooltip .tooltip {
@@ -88,75 +94,35 @@ button:active {
   animation: shake 500ms ease-in-out forwards;
 }
 
-/* Estados personalizados para las alertas */
 .tooltip-container.success .tooltip {
-  --tooltip-background: #0C8CAB; /* Color para el éxito */
+  --tooltip-background: var(--ps-blue);
 }
 
 .tooltip-container.warning .tooltip {
-  --tooltip-background: #f47649; /* Color para el estado de advertencia */
+  --tooltip-background: var(--ps-orange);
 }
 
 .tooltip-container.error .tooltip {
-  --tooltip-background: #562055; /* Color para el error */
+  --tooltip-background: var(--ps-plum);
 }
 
+/* Celulares */
 @media (max-width: 480px) {
-  #text-img{
-
-    font-size: 41px;
-  }
-
-  .half-bottom {
-    width: 74px !important;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
-    position: absolute;
+  .footer-logo {
+    width: 74px;
     left: 43%;
     transform: translate(-12%, -121%);
-    z-index: 10;
   }
-  #tabs{
-    display: flex;
-    justify-items: center;
+
+  .footer-row {
     justify-content: space-around;
-    align-items: center;
   }
-
 }
 
-/* Ceular */
-@media (max-width: 480px) {
-
-
-}
-/* Tabletas en modo retrato */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  /* Estilos aquí */
-}
-
-/* Tabletas en modo paisaje */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-}
-/* Computadoras de escritorio pequeñas/laptops */
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-
-}
-
-/* Computadoras de escritorio grandes */
-@media only screen and (min-width: 1200px ) and (max-width:1400px) {
-
-  .half-bottom {
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
-    position: absolute;
+/* Escritorio 1200px – 1400px */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .footer-logo {
     left: 12%;
     transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-
-}
-/* Monitores grandes */
-@media only screen and (min-width: 1600px) {
-  /* Estilos aquí */
+  }
 }

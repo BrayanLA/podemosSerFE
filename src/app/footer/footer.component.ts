@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent implements OnInit {
 
@@ -13,7 +14,7 @@ export class FooterComponent implements OnInit {
   tooltipClass: string = '';  // Cambiamos de tooltipType a tooltipClass
   private apiUrl = 'https://podemosser.com/enviar-correo';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private cd: ChangeDetectorRef) { }
 
   ngOnInit(): void { }
 
@@ -31,6 +32,7 @@ export class FooterComponent implements OnInit {
           } else {
             console.log("Código de estado inesperado:", response.status); // Manejo de códigos no esperados
           }
+          this.cd.markForCheck();
         },
         error => {
           console.log("Error recibido:", error); // Verifica el error completo
@@ -41,6 +43,7 @@ export class FooterComponent implements OnInit {
             this.message = 'Hubo un problema con tu suscripción. Por favor, inténtalo de nuevo más tarde.';
             this.tooltipClass = 'show-tooltip error';
           }
+          this.cd.markForCheck();
         }
       );
     } else {
@@ -52,6 +55,7 @@ export class FooterComponent implements OnInit {
     setTimeout(() => {
       this.message = null;
       this.tooltipClass = '';
+      this.cd.markForCheck();
     }, 5000);
   }
 

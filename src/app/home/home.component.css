@@ -1,313 +1,50 @@
-/* styles.css */
-@import "../app.component.css";
-
-@font-face {
-  font-family: 'LEMONMILK-RegularItalic'; /* Nombre de la fuente */
-  src: url('/src/assets/fonts/lemon_milk/LEMONMILK-RegularItalic.otf') format('opentype'); /* Ruta al archivo de fuente */
- /* font-weight: bold; /* Peso de la fuente */
-  font-style: normal; /* Estilo de la fuente */
-}
-
-#img-text {
+/* ===== Hero ============================================================== */
+.home-hero {
   position: relative;
   background-image: url('../../assets/img/Generales/homepagepng.webp');
   background-size: cover;
   background-position: center;
-  height: 376px;
+  height: var(--ps-hero-height);
 }
 
-#text-img {
-  color: #4f2352;
-  justify-content: center;
-  font-family: 'LEMONMILK-Bold', sans-serif;
-    font-size: 5rem; /* Tamaño de fuente más grande */
-    font-weight: 550; /* Grosor de la fuente */
-    text-shadow: 2px 2px 2px rgb(73,46,102); /* Efecto de relieve */
+.home-title {
+  color: var(--ps-purple);
+  font-family: var(--ps-font-display);
+  font-size: 5rem;
+  font-weight: 550;
+  text-shadow: 2px 2px 2px rgb(73, 46, 102);
   letter-spacing: 1px;
 }
 
-#backgroud-img {
-  background-image: url('../../assets/img/BG/KONRAD_30mujeres_texturas4.png');
-  background-size: cover;
-  background-position: center;
-}
-#Btn-deco{
-  width: 30px;
+h1 {
+  margin-top: 50px;
 }
 
+/* ===== Texto de presentación ============================================ */
 p {
   font-size: 1.7rem;
-  text-align:left;
+  text-align: left;
   letter-spacing: 1px;
 }
 
 .bold-orange {
-  font-weight: bold; /* Texto en negrita */
-  color: #ff5733; /* Color naranja */
+  font-weight: bold;
+  color: var(--ps-coral);
 }
 
-
-.banda {
-    background-color: #0c8cab;
-    border-radius: 10px;
-}
-
-#carouselExampleSlidesOnly {
-  margin-top: 50px; /* Espacio superior entre el carrusel y el texto */
-}
-
-h1 {
-  margin-top: 50px; /* Espacio superior entre el título y el contenido */
-}
-
-iframe {
-  margin-top: 20px; /* Espacio superior entre los iframes */
-  display: block;
-  margin: 0 auto /* Centra los iframes */
-}
-
-/* Estilos específicos para el carrusel */
-.carousel-item img {
-  max-width: 100%; /* Asegura que las imágenes del carrusel sean responsivas */
-}
-
-
-
-h3.descarga {
-  color: #4f2352; /* Color morado */
-  font-size: 40px; /* Tamaño grande */
-  letter-spacing: 2px; /* Espaciado entre letras */
-  margin-top: 4px; /* Espacio superior */
-  text-shadow: 2px 2px 4px #4f2352; /* Sombra de texto */
-  font-family: 'LEMONMILK-Bold', sans-serif;
-}
-
-.descarga:hover {
-  color: #ff5733; /* Cambia el color al pasar el cursor */
-  transition: color 0.3s ease-in-out; /* Transición suave del color */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
-}
-
-.pushable {
-  position: relative;
-  background: transparent;
-  padding: 0px;
-  border: none;
-  cursor: pointer;
-  outline-offset: 4px;
-  outline-color: deeppink;
-  transition: filter 250ms;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  max-width: 250px;
-}
-
-.shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #0c8cab; /* hsl(226, 25%, 69%);*/
-  border-radius: 8px;
-  filter: blur(2px);
-  will-change: transform;
-  transform: translateY(2px);
-  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-}
-
-.edge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 8px;
-  background: linear-gradient(
-    to right,
-    (#0c8cab) 0%
-    (#0c8cab) 8%
-    (#0c8cab) 92%
-    (#0c8cab) 100%
-   /* hsl(248, 39%, 39%) 0%,
-    hsl(248, 39%, 49%) 8%,
-    hsl(248, 39%, 39%) 92%,
-    hsl(248, 39%, 29%) 100%*/
-  );
-}
-#card{
-  border: none;
-}
-
-.front {
-  display: block;
-  position: relative;
-  border-radius: 8px;
-  background:#4f2352;/*hsl(248, 53%, 58%);*/
-  padding: 16px 32px;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 1rem;
-  transform: translateY(-4px);
-  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-}
-
-.pushable:hover {
-  filter: brightness(110%);
-}
-
-.pushable:hover .front {
-  transform: translateY(-6px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-}
-
-.pushable:active .front {
-  transform: translateY(-2px);
-  transition: transform 34ms;
-}
-
-.pushable:hover .shadow {
-  transform: translateY(4px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-}
-
-.pushable:active .shadow {
-  transform: translateY(1px);
-  transition: transform 34ms;
-}
-
-.pushable:focus:not(:focus-visible) {
-  outline: none;
-}
-
-#carouselExampleSlidesOnly .carousel-inner img {
-  width: 20%; /* Ajusta el ancho según tus necesidades */
-  height: auto; /* Mantiene la proporción original de la imagen */
-}
-
-.galleryContainer {
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-}
-
-.slide {
-  height: 70vh;
-  border-radius: 20px;
-  margin: 10px;
-  cursor: pointer;
-  color: #fff;
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  transition: all 500ms ease-in-out;
-}
-
-.slide h3 {
-  position: absolute;
-  font-size: 24px;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
-
-.slide.active {
-  flex: 10;
-}
-
-.custom-btn-primary {
-  background-color: #ff5733;
-  border-color: #ff5733;
-  padding: 12px 24px;
-  font-size: 1.25rem; /* Aumenta el tamaño de la fuente */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.custom-btn-primary:hover {
-  background-color: #4f2352;
-  border-color: #4f2352;
-}
-.arrow-container {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 30px;
-  background-color: white;
-  border-radius: 25px;
-  margin-left: 8px;
-}
-#bodycard_orange{
-  background-color: #4f2352;
-}
-#bodycard_purple{
-  background-color: #0c8cab;
-}
-#readNow{
-  color: white;
-  font-weight: 500;
-  font-family: "IBM Plex Sans", sans-serif;
-}
-
-.custom-btn-primary2 {
-  background-color: #4f2352;
-  border-color: #4f2352;
-  padding: 12px 24px;
-  font-size: 1.25rem; /* Aumenta el tamaño de la fuente */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.custom-btn-primary2:hover {
-  background-color: #ff5733;
-  border-color: #ff5733;
-}
-
-.arrow-right2 {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-top: 3px solid #ff5733;
-  border-right: 3px solid #ff5733;
-  transform: rotate(45deg);
-}
-
-.card-img-top.first-card {
-  height: 350px; /* Ajusta la altura según tus necesidades */
-  object-fit: cover; /* Para mantener la imagen ajustada dentro del contenedor */
-}
-.rounde-bottom  {
-  border-bottom-left-radius: 25px !important ; /* Ajusta el valor según sea necesario */
-  border-bottom-right-radius:25px !important; /* Ajusta el valor según sea necesario */
-}
-
-.slide.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-}
+/* ===== Formas decorativas ================================================ */
 .circle {
   position: absolute;
-  width: 100px; /* Ajusta el tamaño según sea necesario */
-  height: 200px; /* Ajusta el tamaño según sea necesario */
-   /* Ajusta el color según sea necesario */
-   /* Hace un medio círculo */
+  width: 100px;
+  height: 200px;
 }
 
 .circle1 {
   width: 150px;
   height: 300px;
   top: 57%;
-  right: 0px;
-
-  background-color: #f47649;
+  right: 0;
+  background-color: var(--ps-orange);
   clip-path: ellipse(100% 50% at 100% 50%);
 }
 
@@ -319,7 +56,6 @@ h3.descarga {
   left: -110px;
   transform: rotate(90deg);
   background-image: url('../../assets/img/Generales/floreicta-Photoroom.png');
-
 }
 
 .circle3 {
@@ -327,38 +63,23 @@ h3.descarga {
   height: 80px;
   top: 107%;
   right: 174px;
-  background-color: #562055;
+  background-color: var(--ps-plum);
   border-radius: 20%;
 }
 
-
-
-@media screen and (max-width: 768px) {
-  .container iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
-/* Ceular */
-@media (max-width: 480px) {
-  #text-img{
-
-    font-size: 41px;
-  }
-
-  #img-text {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 176px;
+/* ===== Galería tipo acordeón ============================================= */
+.galleryContainer {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
 }
 
 .slide {
-  height: 40vh;
+  height: 70vh;
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
-  color: #fff;
+  color: var(--ps-white);
   flex: 1;
   background-size: cover;
   background-position: center;
@@ -367,76 +88,113 @@ h3.descarga {
   transition: all 500ms ease-in-out;
 }
 
+.slide.active {
+  flex: 10;
+}
+
+/* ===== Banner "Organizan" con tooltip que sigue al cursor ================ */
+.tooltip-img-container img {
+  cursor: pointer;
+}
+
+.tooltip-follow {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  pointer-events: none;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+/* ===== Sección de descargas ============================================== */
+.download-heading__icon {
+  width: 30px;
+  height: auto;
+}
+
+h3.descarga {
+  color: var(--ps-purple);
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-top: 4px;
+  text-shadow: 2px 2px 4px var(--ps-purple);
+  font-family: var(--ps-font-display);
+}
+
+.descarga:hover {
+  color: var(--ps-coral);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* ===== Video ============================================================= */
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===== Responsive ======================================================== */
+
+/* Tablet y menor */
+@media screen and (max-width: 768px) {
+  .container iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 41px;
+  }
+
+  .home-hero {
+    height: var(--ps-hero-height-phone);
+  }
+
+  .slide {
+    height: 40vh;
+  }
+
   p {
     font-size: 1rem;
-    text-align:left;
-    letter-spacing: 1px;
   }
 
   .responsive-img {
-    max-width: 100%; /* La imagen no será más ancha que su contenedor */
-    height: auto;   /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    height: auto;
   }
 
   h3.descarga {
-    color: #4f2352; /* Color morado */
-    font-size: 21px; /* Tamaño grande */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    margin-top: 4px; /* Espacio superior */
-    text-shadow: 2px 2px 4px #4f2352; /* Sombra de texto */
-  }
-  .circle1 {
-    display: none;
+    font-size: 21px;
   }
 
-  .circle2 {
-    display: none;
-  }
-
+  .circle1,
+  .circle2,
   .circle3 {
     display: none;
   }
-
-}
-/* Tabletas en modo retrato */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  /* Estilos aquí */
 }
 
-/* Tabletas en modo paisaje */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-}
-/* Computadoras de escritorio pequeñas/laptops */
+/* Laptops pequeñas 1024px – 1200px */
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  #img-text {
-    position: relative;
+  .home-hero {
     background-image: url('../../assets/img/Generales/homepagepng.png');
-    background-size: cover;
-    background-position: center;
     height: 156px;
   }
-  p{
-    font-size: 18px;
-    text-align: left;
-    letter-spacing: 1px;
-  }
 
-  .circle {
-    position: absolute;
-    width: 100px; /* Ajusta el tamaño según sea necesario */
-    height: 200px; /* Ajusta el tamaño según sea necesario */
-     /* Ajusta el color según sea necesario */
-     /* Hace un medio círculo */
+  p {
+    font-size: 18px;
   }
 
   .circle1 {
     width: 75px;
     height: 150px;
     top: 92%;
-    right: 0px;
-    background-color: #f47649;
-    clip-path: ellipse(100% 50% at 100% 50%);
   }
 
   .circle2 {
@@ -448,39 +206,24 @@ h3.descarga {
     height: 70px;
     top: 169%;
     right: 37px;
-    background-color: #562055;
-    border-radius: 20%;
   }
-
 }
 
-/* Computadoras de escritorio grandes */
-@media only screen and (min-width: 1200px ) and (max-width:1400px) {
-
-  #img-text {
-    position: relative;
+/* Escritorio 1200px – 1400px */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .home-hero {
     background-image: url('../../assets/img/Generales/homepagepng.png');
-    background-size: cover;
-    background-position: center;
     height: 300px;
   }
-  .circle {
-    position: absolute;
-    width: 100px; /* Ajusta el tamaño según sea necesario */
-    height: 200px; /* Ajusta el tamaño según sea necesario */
-     /* Ajusta el color según sea necesario */
-     /* Hace un medio círculo */
-  }
-  iframe{
+
+  iframe {
     width: 70%;
   }
+
   .circle1 {
     width: 100px;
-        height: 200px;
-        top: 76%;
-        right: 0px;
-        background-color: #f47649;
-        clip-path: ellipse(100% 50% at 100% 50%);
+    height: 200px;
+    top: 76%;
   }
 
   .circle2 {
@@ -492,33 +235,23 @@ h3.descarga {
     height: 70px;
     top: 133%;
     right: 37px;
-    background-color: #562055;
-    border-radius: 20%;
   }
-  .card-img-top.first-card {
-    height: 325px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Para mantener la imagen ajustada dentro del contenedor */
+
+  .download-card__img {
+    height: 325px;
   }
-  #text-img {
-    color: #4f2352;
-    justify-content: center;
-    font-family: 'LEMONMILK-Bold', sans-serif;
+
+  .home-title {
     font-size: 4.2rem;
     font-weight: 530;
-    text-shadow: 2px 2px 2px rgb(73, 46, 102);
-    letter-spacing: 1px;
-}
-p {
-  font-size: 20px;
-  text-align: left;
-  letter-spacing: 1px;
-}
-.responsive-img{
-  width: 73%;
-  height: 96%;
-}
-}
-/* Monitores grandes */
-@media only screen and (min-width: 1600px) {
-  /* Estilos aquí */
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .responsive-img {
+    width: 73%;
+    height: 96%;
+  }
 }
