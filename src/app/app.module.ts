@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ImpactComponent } from './impact/impact.component';
 import { NumberAnimationDirective } from './number-animation.directive';
+import { RevealOnScrollDirective } from './reveal-on-scroll.directive';
 
 
 const bootstrap = require('bootstrap')
@@ -26,7 +27,8 @@ const bootstrap = require('bootstrap')
     AboutComponent,
     ServicesComponent,
     ImpactComponent,
-    NumberAnimationDirective
+    NumberAnimationDirective,
+    RevealOnScrollDirective
   ],
   imports: [
     BrowserModule,

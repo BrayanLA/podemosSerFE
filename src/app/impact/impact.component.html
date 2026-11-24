@@ -6,14 +6,14 @@
 <div class="container-fluid bg-texture">
 
   <div class="container text-center py-5">
-    <h2 class="styled-title styled-title--blue">Cifras</h2>
+    <h2 class="styled-title styled-title--blue" appRevealOnScroll>Cifras</h2>
   </div>
   <div class="container">
     <div class="container pb-5">
       <div class="row impact-figures">
         <div class="col-12 col-md-7">
           <div class="d-flex justify-content-end map-container">
-            <img src="../../assets/img/ImpactMap.png" class="map-ilustration" alt="Mapa de Colombia con los departamentos alcanzados" width="550" height="617" decoding="async">
+            <img src="../../assets/img/ImpactMap.webp" class="map-ilustration" alt="Mapa de Colombia con los departamentos alcanzados" width="550" height="617" decoding="async">
           </div>
         </div>
         <div class="col-5 impact-stats">
@@ -32,7 +32,7 @@
             </div>
             <div class="col-lg-4 mb-4 d-flex flex-column-reverse impact-counter">
               <div class="col text-center">
-                <img src="../../assets/img/Generales/colombia.png" alt="" width="60" height="60" decoding="async">
+                <img src="../../assets/img/Generales/colombia.webp" alt="" width="60" height="60" decoding="async">
                 <h5 appNumberAnimation [start]="0" [end]="16" [duration]="2000" class="pt-2"></h5>
                 <p class="lContador">Departamentos</p>
               </div>
@@ -79,7 +79,7 @@
   </div>
 
   <div class="container text-center py-5">
-    <h2 class="styled-title styled-title--thin">Impacto</h2>
+    <h2 class="styled-title styled-title--thin" appRevealOnScroll>Impacto</h2>
   </div>
 
   <div class="container">
@@ -95,7 +95,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[0].images[0]"
+                <img class="date-image" [src]="thumb(eventos2021[0].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -117,7 +117,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[1].images[0]"
+                <img class="date-image" [src]="thumb(eventos2021[1].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -125,13 +125,13 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Marzo</h2>
             <p class="description text-center justify-content-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp; Socialización Universidad<br>
               del Sinú - Montería <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp; Webinar “Jóvenes<br>
               Iberoamericanos” <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;III Foro Internacional de <br>
               la Mujer - Vicepresidencia <br>
             </p>
@@ -145,7 +145,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[2].images[0]"
+                <img class="date-image" [src]="thumb(eventos2021[2].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -153,7 +153,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Julio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Medellín.
             </p>
           </div>
@@ -166,7 +166,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[3].images[0]"
+                <img class="date-image" [src]="thumb(eventos2021[3].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -174,7 +174,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Agosto</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización <br>
               + mesa técnica Ibagué
             </p>
@@ -188,7 +188,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[4])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[4].images[0]"
+                <img class="date-image" [src]="thumb(eventos2021[4].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -210,7 +210,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2021[5])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2021[5].images[0]"
+                <img class="date-image" [src]="thumb(eventos2021[5].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -218,10 +218,10 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur ">Octubre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Entrega libro - En <br>
               Femenino <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Cali <br>
               + Biblioteca
             </p>
@@ -249,7 +249,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[0].images[0]"
+                <img class="date-image" [src]="thumb(eventos2022[0].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -272,7 +272,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[1].images[0]"
+                <img class="date-image" [src]="thumb(eventos2022[1].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -280,7 +280,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Agosto</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Marea Púrpura
             </p>
           </div>
@@ -295,7 +295,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[2].images[0]"
+                <img class="date-image" [src]="thumb(eventos2022[2].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -303,7 +303,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Septiembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Lanzamiento “Caja <br>
               de herramientas”
             </p>
@@ -319,7 +319,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2022[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2022[3].images[0]"
+                <img class="date-image" [src]="thumb(eventos2022[3].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -353,7 +353,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[0].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[0].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -374,7 +374,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[1].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[1].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -382,12 +382,12 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Abril</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Marea Púrpura
               <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización Acción Interna <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización en Ruta País UR <br>
               + Mesa técnica Mocoa
             </p>
@@ -401,7 +401,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[2].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[2].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -409,7 +409,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Junio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Programa de <br>
               mentorías Valle del Cauca
             </p>
@@ -423,7 +423,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[3].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[3].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -444,7 +444,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[4])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[4].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[4].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -452,7 +452,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Septiembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Socialización + <br>
               mesa técnica Villavicencio
             </p>
@@ -466,7 +466,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[5])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[5].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[5].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -474,7 +474,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Octubre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">
               &nbsp;Jornada juvenil Valledupar
             </p>
           </div>
@@ -487,7 +487,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[6])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[6].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[6].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -507,7 +507,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2023[7])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2023[7].images[0]"
+                <img class="date-image" [src]="thumb(eventos2023[7].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -515,7 +515,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Diciembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Vista Hermosa
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Vista Hermosa
             </p>
           </div>
         </div>
@@ -538,7 +538,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[0].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[0].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -561,7 +561,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[1].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[1].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -569,10 +569,10 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Abril</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de
               mentorías Cúcuta
               <br>
-              <img src="../../assets/img/Generales/tm_icon3.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de
+              <img src="../../assets/img/Generales/tm_icon3.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de
               mentorías Buga
 
             </p>
@@ -588,7 +588,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[2])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[2].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[2].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -596,10 +596,10 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Mayo</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
               KAS PPI
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Socialización
               Universidad de Medellín
             </p>
           </div>
@@ -615,7 +615,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[3])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[3].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[3].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -640,7 +640,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[4])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[4].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[4].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -648,9 +648,9 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-pur">Julio</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Reunión con la Gobernación del Atlántico
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Reunión con la Gobernación del Atlántico
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Reunión con la Alcaldía de Barranquilla
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Reunión con la Alcaldía de Barranquilla
             </p>
           </div>
         </div>
@@ -661,7 +661,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[5])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[5].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[5].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -680,7 +680,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[6])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[6].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[6].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -688,11 +688,11 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Octubre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Mesa técnica en Yopal
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Mesa técnica en Yopal
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Transferencia en Barranquilla
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Transferencia en Barranquilla
               <br>
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de mentorías Sabanalarga
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Programa de mentorías Sabanalarga
             </p>
           </div>
         </div>
@@ -703,7 +703,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[7])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[7].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[7].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -731,7 +731,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2024[8])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2024[8].images[0]"
+                <img class="date-image" [src]="thumb(eventos2024[8].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -739,7 +739,7 @@
           <div class="timeline-content">
             <h2 class="title text-center timeline-title-blue">Diciembre</h2>
             <p class="description text-center">
-              <img src="../../assets/img/Generales/tm_icon2.png" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Podemos ser por
+              <img src="../../assets/img/Generales/tm_icon2.webp" alt="" height="12" width="12" loading="lazy" decoding="async">&nbsp;Podemos ser por
               Venezuela
             </p>
           </div>
@@ -763,7 +763,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2025[0])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2025[0].images[0]"
+                <img class="date-image" [src]="thumb(eventos2025[0].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>
@@ -783,7 +783,7 @@
               <label class="date" data-bs-toggle="modal" data-bs-target="#eventoModal"
                 (click)="openModal(eventos2025[1])">
                 <!-- Muestra la primera imagen del arreglo para la "miniatura" -->
-                <img class="date-image" [src]="eventos2025[1].images[0]"
+                <img class="date-image" [src]="thumb(eventos2025[1].images[0])"
                   alt="..." loading="lazy" decoding="async" />
               </label>
             </div>

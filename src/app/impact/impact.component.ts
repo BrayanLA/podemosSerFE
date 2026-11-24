@@ -9,56 +9,56 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class ImpactComponent {
 
   imagenesFebrero2021: string[] = [
-    "../../assets/img/Carrousell/2021-comprimidas/01 Enero_Lanzamiento.jpg"
+    "../../assets/img/Carrousell/2021-comprimidas/01 Enero_Lanzamiento.webp"
   ];
 
   imagenesMarzo2021: string[] = [
-    "../../assets/2021-comprimidas/03 Marzo_Jóvenes Iberoamericanos.jpeg",
+    "../../assets/2021-comprimidas/03 Marzo_Jóvenes Iberoamericanos.webp",
     "../../assets/2021-comprimidas/03 Marzo_Universidad del Sinú (Montería).jpg"
   ];
   imagenesJulio2021: string[] = [
     "../../assets/img/Carrousell/2021-comprimidas/07 Julio_Socialización Medellín.jpg"
   ];
   imagenesAgosto2021: string[] = [
-    "../../assets/img/Carrousell/2021-comprimidas/08 Agosto_Ibagué (mesa técnica).jpg",
-    "../../assets/2021-comprimidas/08 Agosto_Ibagué.jpg",
-    "../../assets/2021-comprimidas/08 Agosto_Ibagué(3).jpg"
+    "../../assets/img/Carrousell/2021-comprimidas/08 Agosto_Ibagué (mesa técnica).webp",
+    "../../assets/2021-comprimidas/08 Agosto_Ibagué.webp",
+    "../../assets/2021-comprimidas/08 Agosto_Ibagué(3).webp"
   ];
   imagenesSeptiembre2021: string[] = [
     "../../assets/img/Carrousell/2021-comprimidas/09 Septiembre_Manizales (2).jpg",
     "../../assets/2021-comprimidas/09 Septiembre_Manizales.jpg",
-    "../../assets/2021-comprimidas/09 Septiembre_Manizales (3).jpg",
-    "../../assets/2021-comprimidas/09 Septiembre_Manizales (4).jpg"
+    "../../assets/2021-comprimidas/09 Septiembre_Manizales (3).webp",
+    "../../assets/2021-comprimidas/09 Septiembre_Manizales (4).webp"
   ];
   imagenesOctubre2021: string[] = [
-    "../../assets/img/Carrousell/2021-comprimidas/10 Octubre Socialización Cali (2).jpeg",
+    "../../assets/img/Carrousell/2021-comprimidas/10 Octubre Socialización Cali (2).webp",
     "../../assets/2021-comprimidas/10 Octubre_En Femenino.jpg",
-    "../../assets/2021-comprimidas/10 Octubre_Socialización Cali (2).jpg",
-    "../../assets/2021-comprimidas/10 Octubre_Socialización Cali - Biblioteca.jpg",
-    "../../assets/2021-comprimidas/10 Octubre_Socialización Cali.jpg"
+    "../../assets/2021-comprimidas/10 Octubre_Socialización Cali (2).webp",
+    "../../assets/2021-comprimidas/10 Octubre_Socialización Cali - Biblioteca.webp",
+    "../../assets/2021-comprimidas/10 Octubre_Socialización Cali.webp"
   ];
   imagenesMarzo2022: string[] = [
-    "../../assets/img/Carrousell/2022-comprimidas/03 Marzo_Socialización Bogotá (1).jpg",
-    "../../assets/2022-comprimidas/03 Marzo_Socialización Bogotá (2).jpg",
-    "../../assets/2022-comprimidas/03 Marzo_Socialización Bogotá.jpg"
+    "../../assets/img/Carrousell/2022-comprimidas/03 Marzo_Socialización Bogotá (1).webp",
+    "../../assets/2022-comprimidas/03 Marzo_Socialización Bogotá (2).webp",
+    "../../assets/2022-comprimidas/03 Marzo_Socialización Bogotá.webp"
   ];
   imagenesAgosto2022: string[] = [
-    "../../assets/img/Carrousell/2022-comprimidas/08 Agosto_Marea Púrpura (Bogotá).jpg",
+    "../../assets/img/Carrousell/2022-comprimidas/08 Agosto_Marea Púrpura (Bogotá).webp",
     "../../assets/2022-comprimidas/08 Agosto_Marea Púrpura (Barranquilla).jpg",
-    "../../assets/2022-comprimidas/08 Agosto_Marea Púrpura (Buenaventura).jpg",
-    "../../assets/2022-comprimidas/08 Agosto_Marea Púrpura (Cucuta).jpg"
+    "../../assets/2022-comprimidas/08 Agosto_Marea Púrpura (Buenaventura).webp",
+    "../../assets/2022-comprimidas/08 Agosto_Marea Púrpura (Cucuta).webp"
   ];
   imagenesSeptiembre2022: string[] = [
-    "../../assets/img/Carrousell/2022-comprimidas/09 Septiembre_Lanzamiento.jpg"
+    "../../assets/img/Carrousell/2022-comprimidas/09 Septiembre_Lanzamiento.webp"
   ];
 
   imagenesNoviembre2022: string[] = [
-    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Colegio Mayor San bartolomé (2).jpeg",
-    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Colegio Mayor San bartolomé (4).jpeg",
-    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Colegio Mayor San bartolomé.jpeg",
-    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Mentorías KAS.jpg",
-    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Premio Dejar Huella (1).jpeg",
-    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Premio Dejar Huella (2).jpeg"
+    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Colegio Mayor San bartolomé (2).webp",
+    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Colegio Mayor San bartolomé (4).webp",
+    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Colegio Mayor San bartolomé.webp",
+    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Mentorías KAS.webp",
+    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Premio Dejar Huella (1).webp",
+    "../../assets/img/Carrousell/2022-comprimidas/11 Noviembre_Premio Dejar Huella (2).webp"
   ];
   imagenesMarzo2023: string[] = [
     "../../assets/2023-comprimidas/2023.png"
@@ -66,89 +66,89 @@ export class ImpactComponent {
 
   imagenesAbril2023: string[] = [
     "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Marea Púrpura (Bucaramanga).jpg",
-    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Acción Interna.jpeg",
+    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Acción Interna.webp",
     "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Marea Púrpura (Bogotá).jpg",
     "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Marea Púrpura (Medellín).jpg",
     "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Marea Púrpura (Tumaco).jpg",
-    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Ruta País (Mesa técnica - Mocoa 2).jpg",
-    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Ruta País (Mesa técnica - Mocoa).jpg",
-    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Ruta País (Socialización - Mocoa).jpg"
+    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Ruta País (Mesa técnica - Mocoa 2).webp",
+    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Ruta País (Mesa técnica - Mocoa).webp",
+    "../../assets/img/Carrousell/2023-comprimidas/04 Abril_Ruta País (Socialización - Mocoa).webp"
   ];
   imagenesJunio2023: string[] = [
-    "../../assets/img/Carrousell/2023-comprimidas/06 Junio_Mentorías Valle del Cauca.jpg",
-    "../../assets/img/Carrousell/2023-comprimidas/06 Junio_Mentorías Valle del Cauca (2).jpg"
+    "../../assets/img/Carrousell/2023-comprimidas/06 Junio_Mentorías Valle del Cauca.webp",
+    "../../assets/img/Carrousell/2023-comprimidas/06 Junio_Mentorías Valle del Cauca (2).webp"
   ];
   imagenesJulio2023: string[] = [
-    "../../assets/img/Carrousell/2023-comprimidas/07 Julio_Entrevista doble radio G.jpg"
+    "../../assets/img/Carrousell/2023-comprimidas/07 Julio_Entrevista doble radio G.webp"
   ];
   imagenesSeptiembre2023: string[] = [
-    "../../assets/img/Carrousell/2023-comprimidas/09 Septiembre_Mesa técnica Villavicencio.jpg",
+    "../../assets/img/Carrousell/2023-comprimidas/09 Septiembre_Mesa técnica Villavicencio.webp",
     "../../assets/img/Carrousell/2023-comprimidas/09 Septiembre_Socialización Villavicencio.jpg",
   ];
   imagenesOctubre2023: string[] = [
-    "../../assets/img/Carrousell/2023-comprimidas/10 Octubre_Jornada juvenil Valledupar.jpg"
+    "../../assets/img/Carrousell/2023-comprimidas/10 Octubre_Jornada juvenil Valledupar.webp"
   ];
   imagenesNoviembre2023: string[] = [
-    "../../assets/img/Carrousell/2023-comprimidas/11 Noviembre_ELIGEP 2050.jpg"
+    "../../assets/img/Carrousell/2023-comprimidas/11 Noviembre_ELIGEP 2050.webp"
   ];
   imagenesDiciembre2023: string[] = [
-    "../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa.jpg",
-    "../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa (1).jpg"
+    "../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa.webp",
+    "../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa (1).webp"
   ];
   imagenesMarzo2024: string[] = [
-    "../../assets/img/Carrousell/2024-comprimidas/8 marzo_socialización Universidad de Medellín-min.jpeg",
-    "../../assets/img/Carrousell/2024-comprimidas/8 marzo_socialización Universidad de Medellín (2)-min.jpeg",
-    "../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa (1).jpg"
+    "../../assets/img/Carrousell/2024-comprimidas/8 marzo_socialización Universidad de Medellín-min.webp",
+    "../../assets/img/Carrousell/2024-comprimidas/8 marzo_socialización Universidad de Medellín (2)-min.webp",
+    "../../assets/img/Carrousell/2023-comprimidas/12 Diciembre_Vista Hermosa (1).webp"
   ];
   imagenesAbril2024: string[] = [
-    "../../assets/img/Carrousell/2024-comprimidas/29 abril_programa de mentorías (2) Buga-min.jpeg",
-    "../../assets/img/Carrousell/2024-comprimidas/29 abril_programa de mentorías (3)Buga-min.jpeg"
+    "../../assets/img/Carrousell/2024-comprimidas/29 abril_programa de mentorías (2) Buga-min.webp",
+    "../../assets/img/Carrousell/2024-comprimidas/29 abril_programa de mentorías (3)Buga-min.webp"
   ];
   imagenesMayo2024: string[] = [
-    "../../assets/2024-comprimidas/22 mayo_socialización KAS PPI (2)-min.jpeg",
-    "../../assets/2024-comprimidas/30 mayo_socialización Universidad de Medellín-min.jpeg"
+    "../../assets/2024-comprimidas/22 mayo_socialización KAS PPI (2)-min.webp",
+    "../../assets/2024-comprimidas/30 mayo_socialización Universidad de Medellín-min.webp"
   ];
   imagenesJunio2024: string[] = [
-    "../../assets/img/Carrousell/2024-comprimidas/10 junio_socialización Soy Líder-min.jpeg",
-    "../../assets/img/Carrousell/2024-comprimidas/10 junio_socialización Soy Líder(2)-min.jpeg",
-    "../../assets/img/Carrousell/2024-comprimidas/13 junio_ socialización obra de teatro Amarte Así (2)-min.jpeg"
+    "../../assets/img/Carrousell/2024-comprimidas/10 junio_socialización Soy Líder-min.webp",
+    "../../assets/img/Carrousell/2024-comprimidas/10 junio_socialización Soy Líder(2)-min.webp",
+    "../../assets/img/Carrousell/2024-comprimidas/13 junio_ socialización obra de teatro Amarte Así (2)-min.webp"
   ];
   imagenesJulio2024: string[] = [
-    "../../assets/2024-comprimidas/30_julio_reunion_secretaria_mujer_equidad_genero_gobernacion_atlantico.jpg",
-    "../../assets/2024-comprimidas/31_julio_reunion_secretaria_mujer_equidad_genero_alcaldia_barranquilla.jpeg"
+    "../../assets/2024-comprimidas/30_julio_reunion_secretaria_mujer_equidad_genero_gobernacion_atlantico.webp",
+    "../../assets/2024-comprimidas/31_julio_reunion_secretaria_mujer_equidad_genero_alcaldia_barranquilla.webp"
   ];
   imagenesSeptiembre2024: string[] = [
-    "../../assets/2024-comprimidas/21 septiembre_Mujeres que inspiran_Testimonio Cindy Tatiana Angulo.jpg"
+    "../../assets/2024-comprimidas/21 septiembre_Mujeres que inspiran_Testimonio Cindy Tatiana Angulo.webp"
   ];
   imagenesOctubre2024: string[] = [
-    "../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare.jpg",
-    "../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare (2).jpg",
-    "../../assets/2024-comprimidas/24 octubre_Transferencia metodológica con la Gobernación del Atlántico.jpg",
-    "../../assets/2024-comprimidas/24 octubre_Transferencia metodológica con la Gobernación del Atlántico (2).jpg",
-    "../../assets/2024-comprimidas/25 octubre_programa de formación con la Gobernación del Atlántico.jpg",
-    "../../assets/2024-comprimidas/25 octubre_programa de formación con la Gobernación del Atlántico (2).jpg",
+    "../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare.webp",
+    "../../assets/2024-comprimidas/18 octubre_Mesa técnica por la promoción del liderazgo y la autonomía económica de las mujeres en Casanare (2).webp",
+    "../../assets/2024-comprimidas/24 octubre_Transferencia metodológica con la Gobernación del Atlántico.webp",
+    "../../assets/2024-comprimidas/24 octubre_Transferencia metodológica con la Gobernación del Atlántico (2).webp",
+    "../../assets/2024-comprimidas/25 octubre_programa de formación con la Gobernación del Atlántico.webp",
+    "../../assets/2024-comprimidas/25 octubre_programa de formación con la Gobernación del Atlántico (2).webp",
   ];
   imagenesNoviembre2024: string[] = [
-    "../../assets/2024-comprimidas/4 noviembre_60 años KAS Colombia.jpg",
-    "../../assets/2024-comprimidas/7 noviembre_programa de mentorías en Barranca de Upía.jpg",
-    "../../assets/2024-comprimidas/8 noviembre_programa de mentorías en Buenaventura.jpg",
-    "../../assets/2024-comprimidas/17 de noviembre_programa de mentorías con la Gobernación de Casanare.jpg",
-    "../../assets/2024-comprimidas/17 de noviembre_programa de mentorías con la Gobernación de Casanare (2).jpg",
-    "../../assets/2024-comprimidas/17_de_noviembre_programa_de_mentorías_con_la_Gobernación_de_Casanare3.jpg",
-    "../../assets/2024-comprimidas/25 noviembre_Día de la No Violencia contra la Mujer en Buga.jpeg",
+    "../../assets/2024-comprimidas/4 noviembre_60 años KAS Colombia.webp",
+    "../../assets/2024-comprimidas/7 noviembre_programa de mentorías en Barranca de Upía.webp",
+    "../../assets/2024-comprimidas/8 noviembre_programa de mentorías en Buenaventura.webp",
+    "../../assets/2024-comprimidas/17 de noviembre_programa de mentorías con la Gobernación de Casanare.webp",
+    "../../assets/2024-comprimidas/17 de noviembre_programa de mentorías con la Gobernación de Casanare (2).webp",
+    "../../assets/2024-comprimidas/17_de_noviembre_programa_de_mentorías_con_la_Gobernación_de_Casanare3.webp",
+    "../../assets/2024-comprimidas/25 noviembre_Día de la No Violencia contra la Mujer en Buga.webp",
   ];
   imagenesDiciembre2024: string[] = [
-    "../../assets/2024-comprimidas/2 diciembre_Podemos ser por Venezuela.jpg"
+    "../../assets/2024-comprimidas/2 diciembre_Podemos ser por Venezuela.webp"
   ];
   imagenesFebrero2025: string[] = [
-    "../../assets/2025-comprimidas/25 febrero_Cumbre de Mandatarias por la Igualdad.jpeg"
+    "../../assets/2025-comprimidas/25 febrero_Cumbre de Mandatarias por la Igualdad.webp"
   ];
   imagenesMarzo2025: string[] = [
-    "../../assets/2025-comprimidas/7 marzo_Conmemoración 8M en Galapa.jpg",
-    "../../assets/2025-comprimidas/7 marzo_Desayuno de Poderosas.jpg",
-    "../../assets/2025-comprimidas/10 marzo_Conmemoración 8M en Tarso.jpg",
-    "../../assets/2025-comprimidas/12 marzo_Podemos Ser en Mastercard.jpg",
-    "../../assets/2025-comprimidas/12 marzo_VII Festival Literario de Mujeres.jpg",
+    "../../assets/2025-comprimidas/7 marzo_Conmemoración 8M en Galapa.webp",
+    "../../assets/2025-comprimidas/7 marzo_Desayuno de Poderosas.webp",
+    "../../assets/2025-comprimidas/10 marzo_Conmemoración 8M en Tarso.webp",
+    "../../assets/2025-comprimidas/12 marzo_Podemos Ser en Mastercard.webp",
+    "../../assets/2025-comprimidas/12 marzo_VII Festival Literario de Mujeres.webp",
   ];
   eventos2021 = [
     {
@@ -315,6 +315,11 @@ export class ImpactComponent {
   // Variable que almacenará el color seleccionado al abrir el modal
   selectedTitleColor = '#df7c53';
   selectedEvent: { id: string; title: string; images: string[] } | null = null;
+
+  /** Miniatura (~320px) de una foto de la galería para el círculo de la línea de tiempo. */
+  thumb(src: string): string {
+    return src.replace(/\.(webp|jpe?g|png)$/i, '-thumb.webp');
+  }
 
   openModal(evento: { id: string; title: string; images: string[] }): void {
     this.selectedEvent = evento;

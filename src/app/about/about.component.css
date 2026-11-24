@@ -1,6 +1,6 @@
 /* ===== Hero ============================================================== */
 .about-hero {
-  background-image: url('../../assets/img/BG/08 Agosto_Ibagué.jpg');
+  background-image: url('../../assets/img/BG/08 Agosto_Ibagué.webp');
 }
 
 /* ===== Base ============================================================== */
@@ -135,6 +135,18 @@ h2 {
   aspect-ratio: 11 / 10;
   background-color: var(--deco-color);
   border-radius: 0 50% 50% 0;
+}
+
+/* Entrada de la "D" (appRevealOnScroll en .profile-card__body): sube desde la
+   tarjeta, como si saliera de ella */
+.profile-card__body.reveal::after {
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 800ms cubic-bezier(0.34, 1.4, 0.64, 1) 150ms;
+}
+
+.profile-card__body.reveal.is-visible::after {
+  transform: none;
 }
 
 .profile-card p {

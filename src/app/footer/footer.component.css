@@ -4,19 +4,28 @@ footer {
   color: var(--ps-plum);
 }
 
-.footer-row {
+/* Marca: logo + frase lado a lado. El logo va dentro del flujo (nunca tapa la
+   frase) y se eleva con transform para que se asome por encima del borde del
+   footer, sin ocupar espacio extra. */
+.footer-brand {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: -12px; /* compensa parte del espacio superior de la fila (.gy-4) */
 }
 
 .footer-logo {
-  height: auto; /* conserva la proporción cuando cambia el ancho */
+  flex: 0 0 auto;
+  width: 105px;
+  height: auto;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 1.1));
-  position: absolute;
-  left: 25%;
-  transform: translate(-50%, -66%);
-  z-index: 10;
+  transform: translateY(-53px); /* se asoma ~30px sobre el borde superior del footer */
+}
+
+.footer-slogan {
+  margin: 0;
+  max-width: 12rem;
 }
 
 .social-icon--plum {
@@ -106,23 +115,21 @@ button:active {
   --tooltip-background: var(--ps-plum);
 }
 
+/* Escritorio: la marca comparte fila con redes y suscripción; se sube el bloque
+   completo para que la frase quede alineada con ellas y el logo sobresalga */
+@media (min-width: 992px) {
+  .footer-brand {
+    margin-top: -38px;
+  }
+
+  .footer-logo {
+    transform: translateY(-39px);
+  }
+}
+
 /* Celulares */
 @media (max-width: 480px) {
   .footer-logo {
     width: 74px;
-    left: 43%;
-    transform: translate(-12%, -121%);
-  }
-
-  .footer-row {
-    justify-content: space-around;
-  }
-}
-
-/* Escritorio 1200px – 1400px */
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .footer-logo {
-    left: 12%;
-    transform: translate(-50%, -50%);
   }
 }

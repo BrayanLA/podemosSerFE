@@ -68,13 +68,29 @@ p {
   font-style: normal;
 }
 
+/* Contenedor de páginas (app.component): durante el cambio de sección la
+   página que sale y la que entra comparten la misma celda de la grilla, una
+   junto a la otra al deslizarse, sin espacio vacío entre ellas. No se usa
+   position para no cambiar el bloque contenedor de las formas decorativas. */
+.route-viewport {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.route-viewport > * {
+  grid-area: 1 / 1;
+}
+
 /* 4. Patrones compartidos ------------------------------------------------- */
 
-/* Fondo con textura usado en todas las páginas */
+/* Fondo con textura usado en todas las páginas. Se repite a un tamaño fijo
+   (la imagen mide 2473px; a 2000px se ve nítida) en vez de usar `cover`, que la
+   estiraba según el alto de cada sección (hasta ×3 en la línea de tiempo). */
 .bg-texture {
-  background-image: url('assets/img/BG/KONRAD_30mujeres_texturas4.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('assets/img/BG/KONRAD_30mujeres_texturas4.webp');
+  background-size: 2000px auto;
+  background-repeat: repeat;
+  background-position: top center;
 }
 
 /* Hero (banner con foto) de las páginas internas.
@@ -160,6 +176,76 @@ p {
   z-index: -2;
 }
 
+/* Animación de entrada (directiva appRevealOnScroll): al aparecer en pantalla la
+   franja crece desde el borde izquierdo, luego la línea blanca y al final el
+   texto. Sin la directiva, el título se ve completo desde el inicio. */
+.styled-title.reveal {
+  color: rgba(255, 255, 255, 0);
+  transition: color 450ms ease 550ms;
+}
+
+.styled-title.reveal::before,
+.styled-title.reveal::after {
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: left center;
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.styled-title.reveal::after {
+  transition-delay: 250ms;
+}
+
+.styled-title.reveal.is-visible {
+  color: var(--ps-white);
+}
+
+.styled-title.reveal.is-visible::before,
+.styled-title.reveal.is-visible::after {
+  transform: translateY(-50%) scaleX(1);
+}
+
+/* Animaciones de entrada para formas decorativas. Se combinan con la directiva
+   appRevealOnScroll (que agrega .reveal y, al verse, .is-visible):
+   .reveal-from-right / .reveal-from-left  entran deslizándose desde el borde
+   .reveal-pop                             crecen con un pequeño rebote y giro
+   .reveal-rise                            crecen desde abajo */
+.reveal-from-right.reveal,
+.reveal-from-left.reveal,
+.reveal-rise.reveal {
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1), opacity 600ms ease;
+}
+
+/* Solo se desplazan un 60%: si salieran del todo de la pantalla, el
+   IntersectionObserver (que mide la posición ya desplazada) nunca las vería */
+.reveal-from-right.reveal {
+  transform: translateX(60%);
+  opacity: 0;
+}
+
+.reveal-from-left.reveal {
+  transform: translateX(-60%);
+  opacity: 0;
+}
+
+.reveal-rise.reveal {
+  transform: scaleY(0);
+  transform-origin: bottom center;
+}
+
+.reveal-pop.reveal {
+  transform: scale(0) rotate(-35deg);
+  opacity: 0;
+  transition: transform 700ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 300ms ease;
+}
+
+.reveal-from-right.reveal.is-visible,
+.reveal-from-left.reveal.is-visible,
+.reveal-rise.reveal.is-visible,
+.reveal-pop.reveal.is-visible {
+  transform: none;
+  opacity: 1;
+}
+
 /* Tarjeta de descarga de publicaciones ("¡LEER AHORA!") */
 .download-card {
   border: none;
@@ -168,6 +254,14 @@ p {
 .download-card__img {
   height: 350px;
   object-fit: cover;
+}
+
+/* En celulares la tarjeta es angosta: con alto fijo + cover se recortaban
+   los laterales de la portada. Ahí se respeta la proporción de la imagen. */
+@media (max-width: 575.98px) {
+  .download-card__img {
+    height: auto;
+  }
 }
 
 .download-card__body {

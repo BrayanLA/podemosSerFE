@@ -2,9 +2,9 @@
 
 <!-- Ojo: este contenedor no es position-relative (igual que en producción); las formas .circle se ubican respecto al documento -->
 <div class="bg-texture">
-  <div class="circle circle1"></div>
-  <div class="circle2"></div>
-  <div class="circle circle3"></div>
+  <div class="circle circle1 reveal-from-right" appRevealOnScroll [revealThreshold]="0.25"></div>
+  <div class="circle2" appRevealOnScroll [revealThreshold]="0.25"></div>
+  <div class="circle circle3 reveal-pop" appRevealOnScroll [revealThreshold]="0.5"></div>
   <div class="container pb-5">
     <div class="row">
       <div class="col">
@@ -16,7 +16,7 @@
     </div>
     <div class="row">
       <div class="col-4 d-none d-md-flex justify-content-end">
-        <img src="../../assets/img/Generales/Png podemos ser 2.png" class="responsive-img" alt="Integrantes de Podemos Ser" decoding="async" /><!-- sin width/height: en desktop se estira con la columna (flex) -->
+        <img src="../../assets/img/Generales/Png podemos ser 2.webp" class="responsive-img" alt="Integrantes de Podemos Ser" decoding="async" /><!-- sin width/height: en desktop se estira con la columna (flex) -->
       </div>
       <div class="col-12 col-md-7">
         <p>
@@ -39,40 +39,25 @@
     </div>
   </div>
 
-  <div class="container galleryContainer py-4">
-    <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr1.jpg')"></div>
-    <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr2.jpg')"></div>
-    <div class="slide"
-      style="background-image: url('../../assets/img/2023/04 Abril_Ruta País (Mesa técnica - Mocoa 2).jpg');"></div>
-    <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr4.jpg')"></div>
-    <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr5.jpg')"></div>
-    <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr6.jpg')"></div>
-    <div class="slide" style="background-image: url('../../assets/img/CarrousellHome/Carr7.jpg')"></div>
-  </div>
-  <div class="container py-5 text-center d-flex justify-content-center align-items-center">
-    <a href="https://www.kas.de/documents/d/kolumbien/abece-podemos-ser-1-" target="_blank" rel="noopener">
-      <div class="tooltip-img-container"
-           (mousemove)="onMouseMove($event)"
-           (mouseleave)="hideTooltip()">
-        <img src="../../assets/img/ORGANIZAN.png"
-             class="img-fluid"
-             alt="Organizan"
-             width="1595" height="1080" loading="lazy" decoding="async">
-      </div>
-    </a>
-  </div>
-
-  <!-- Tooltip flotante -->
-  <div *ngIf="tooltipVisible"
-       class="tooltip-follow"
-       [style.left.px]="tooltipX + 10"
-       [style.top.px]="tooltipY + 10">
-    Haz clic para ver más
-  </div>
+  <!-- Galería: acordeón en escritorio, carrusel deslizable en tablet/móvil -->
+  <section class="gallery" aria-label="Galería de actividades">
+    <div class="gallery__track" #track (scroll)="onTrackScroll()">
+      <button *ngFor="let slide of slides; let i = index" type="button" class="gallery__item"
+              [class.is-active]="i === active" [style.--ratio]="slide.ratio" [attr.aria-pressed]="i === active" [attr.aria-label]="slide.alt"
+              (click)="select(i)" (focus)="select(i)" (mouseenter)="hover(i)">
+        <img [src]="slide.src" alt="" loading="lazy" decoding="async">
+      </button>
+    </div>
+    <div class="gallery__dots">
+      <button *ngFor="let slide of slides; let i = index" type="button" class="gallery__dot"
+              [class.is-current]="i === current" [attr.aria-label]="'Ver foto ' + (i + 1) + ': ' + slide.alt"
+              (click)="goTo(i)"></button>
+    </div>
+  </section>
 
   <div class="container py-5 text-center d-flex justify-content-center align-items-center">
-    <img src="../../assets/img/Generales/ps_icon3.png" class="download-heading__icon" alt="" width="668" height="664" loading="lazy" decoding="async">
-    <h3 class="descarga px-2">DESCARGA NUESTRO CONTENIDO</h3> <img src="../../assets/img/Generales/ps_icon2.png"
+    <img src="../../assets/img/Generales/ps_icon3.webp" class="download-heading__icon" alt="" width="668" height="664" loading="lazy" decoding="async">
+    <h3 class="descarga px-2">DESCARGA NUESTRO CONTENIDO</h3> <img src="../../assets/img/Generales/ps_icon2.webp"
       class="download-heading__icon" alt="" width="670" height="660" loading="lazy" decoding="async">
   </div>
 
@@ -80,7 +65,7 @@
     <div class="row justify-content-center">
       <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mx-5">
         <div class="text-center card h-100 download-card">
-          <img class="card-img-top download-card__img" src="../../assets/img/Generales/libro.png" alt="Libro Podemos Ser" width="720" height="880" loading="lazy" decoding="async" />
+          <img class="card-img-top download-card__img" src="../../assets/img/Generales/libro.webp" alt="Libro Podemos Ser" width="720" height="880" loading="lazy" decoding="async" />
           <div class="card-body d-flex flex-row align-items-center justify-content-center download-card__body download-card__body--blue">
             <span class="download-card__label">¡LEER AHORA!</span>
             <span class="download-card__arrow">
@@ -99,7 +84,7 @@
       </div>
       <div class="col-sm-6 col-md-4 col-lg-3 mb-5 mx-5">
         <div class="text-center card h-100 download-card">
-          <img class="card-img-top download-card__img" src="../../assets/img/Generales/cartilla.png" alt="Cartilla Puedo Ser por Colombia" width="784" height="880" loading="lazy" decoding="async" />
+          <img class="card-img-top download-card__img" src="../../assets/img/Generales/cartilla.webp" alt="Cartilla Puedo Ser por Colombia" width="784" height="880" loading="lazy" decoding="async" />
           <div class="card-body d-flex flex-row align-items-center justify-content-center download-card__body download-card__body--purple">
             <span class="download-card__label">¡LEER AHORA!</span>
             <span class="download-card__arrow">
@@ -118,8 +103,8 @@
     </div>
   </div>
   <div class="container py-5">
-    <iframe width="1000" height="450" src="https://www.youtube.com/embed/ymCpVsB0MH0?si=pdCdSmDeQ2Dmv3YH"
-      title="YouTube video player" frameborder="0"
+    <iframe width="1000" height="450" src="https://www.youtube-nocookie.com/embed/ymCpVsB0MH0" loading="lazy"
+      title="Video: Podemos Ser" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
   </div>

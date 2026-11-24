@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "podemos-ser-dev",
+      "runtimeExecutable": "C:/Users/Administrador/AppData/Local/Temp/claude/C--Users-Administrador-Workspace-podemosSerFE/eeee4317-f400-474c-944d-9233cdbce44e/scratchpad/node/node-v16.20.2-win-x64/node.exe",
+      "runtimeArgs": ["node_modules/@angular/cli/bin/ng.js", "serve", "--port", "4200"],
+      "port": 4200
+    }
+  ]
+}
